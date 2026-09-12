@@ -1,0 +1,33 @@
+{
+  "name": "mictrack_mt600",
+  "display_name": "MicTrack MT600",
+  "vendor": "MicTrack",
+  "description": "MicTrack's protocol is text, not AVL numbering.",
+  "protocols": [
+    "mictrack"
+  ],
+  "models": [
+    "MT600"
+  ],
+  "attributes": {
+    "event": {
+      "name": "Event",
+      "values": {
+        "0": "Power on",
+        "5": "SOS",
+        "8": "Low battery",
+        "9": "Geofence enter",
+        "10": "Geofence exit",
+        "12": "Power off"
+      },
+      "entity_category": "diagnostic",
+      "description": "The reason for the report, sent on every message form the MT600 uses (R0 location, R1/R2/R3/R12/R13 network, RH status). `event` is on the built-in denylist because other protocols put an unbounded blob there; here it is a small integer, and an override beats the denylist, which is what a model profile is for. The six labels are the codes MictrackProtocolDecoder.decodeAlarm maps to alarms and the only ones Traccar documents; anything else keeps showing as its number, so a firmware that adds one is not hidden."
+    },
+    "type": {
+      "name": "Message type",
+      "entity_category": "diagnostic",
+      "enabled_by_default": false,
+      "description": "KEY_TYPE, the counter MicTrack puts in field 2 of every sentence. Useful when reading a capture, not on a dashboard, so it is created switched off."
+    }
+  }
+}
