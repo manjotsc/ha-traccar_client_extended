@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!--
+    Traccar Client Extended.
+
+    A location pin with transmission arcs: positions pushed over a websocket as
+    the server emits them, rather than polled.
+
+    Original artwork. Traccar's own mark cannot be used - the server is Apache
+    2.0 and clause 6 explicitly withholds trademark rights, and Traccar
+    publishes no third-party logo policy.
+
+    Geometry is centred on (200, 200) with the tip at y=480, which puts the
+    inked bounding box in the middle of the 512 canvas with room to breathe.
+    Home Assistant renders integration icons edge to edge.
+  -->
+  <defs>
+    <!-- Emerald to bright green. Traccar's own branding is blue, so green also
+         keeps the two visually distinct, and the ramp is mid-toned so it holds
+         up against both light and dark Home Assistant themes. -->
+    <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#059669"/>
+      <stop offset="1" stop-color="#4ADE80"/>
+    </linearGradient>
+
+    <!-- The pin's hole, punched through everything so the background shows. -->
+    <mask id="hole">
+      <rect width="512" height="512" fill="white"/>
+      <circle cx="200" cy="200" r="46" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- Nudged so the inked bounding box, arc end caps included, sits centred
+       in the canvas rather than 7px right and 5px high. -->
+  <g mask="url(#hole)" transform="translate(-7 5)">
+    <!-- Teardrop: up the right flank, a half circle over the top, back down. -->
+    <path d="M 200 480
+             C 200 480 318 310 318 200
+             A 118 118 0 0 0 82 200
+             C 82 310 200 480 200 480 Z"
+          fill="url(#fill)"/>
+
+    <!-- Transmission arcs, struck from the pin's own centre. -->
+    <path d="M 321.6 74.1 A 175 175 0 0 1 321.6 325.9"
+          fill="none" stroke="url(#fill)" stroke-width="26" stroke-linecap="round"/>
+    <path d="M 361.2 33.1 A 232 232 0 0 1 361.2 366.9"
+          fill="none" stroke="url(#fill)" stroke-width="24" stroke-linecap="round"/>
+  </g>
+</svg>

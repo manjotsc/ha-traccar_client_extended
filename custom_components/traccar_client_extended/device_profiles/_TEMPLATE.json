@@ -1,0 +1,27 @@
+{
+  "name": "vendor_model",
+  "display_name": "Vendor Model",
+  "vendor": "Vendor",
+  "description": "What this profile covers, and where the mappings came from.",
+  "protocols": ["traccar-protocol-name"],
+  "models": ["MODEL123"],
+  "attributes": {
+    "io999": {
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2,
+      "name": "External power",
+      "description": "AVL ID 999, reported in millivolts"
+    },
+    "io998": {
+      "platform": "binary_sensor",
+      "device_class": "motion",
+      "name": "Movement"
+    },
+    "io997": {
+      "platform": "ignore",
+      "description": "Changes on every report and is not useful in Home Assistant"
+    }
+  }
+}

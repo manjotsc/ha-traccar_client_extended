@@ -1,0 +1,271 @@
+{
+  "name": "teltonika_ftc921",
+  "display_name": "Teltonika FTC921",
+  "vendor": "Teltonika",
+  "description": "AVL parameters that Traccar's Teltonika decoder leaves as raw io<id> values, taken from the Teltonika Telematics wiki page for the FTC921. Note that Traccar decodes several IDs only when the device's model field is set to a matching FT[A-Z]nnn value.",
+  "protocols": [
+    "teltonika"
+  ],
+  "models": [
+    "FTC921"
+  ],
+  "attributes": {
+    "io800": {
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2,
+      "name": "External power",
+      "description": "AVL ID 800, External Voltage in mV. Traccar decodes this to `power` only when the device's model field matches FT[A-Z]nnn; with the model unset it arrives raw."
+    },
+    "io70": {
+      "device_class": "temperature",
+      "unit": "°C",
+      "scale": 0.1,
+      "precision": 1,
+      "name": "PCB temperature",
+      "description": "AVL ID 70. The documented range of -550..1150 for a degrees-Celsius value means it is sent in tenths."
+    },
+    "io1148": {
+      "device_class": "signal_strength",
+      "unit": "dBm",
+      "name": "Connectivity quality",
+      "description": "AVL ID 1148."
+    },
+    "io386": {
+      "device_class": "duration",
+      "unit": "s",
+      "name": "Time from last fix",
+      "description": "AVL ID 386."
+    },
+    "io449": {
+      "device_class": "duration",
+      "unit": "s",
+      "name": "Ignition on counter",
+      "description": "AVL ID 449."
+    },
+    "io255": {
+      "device_class": "speed",
+      "unit": "km/h",
+      "name": "Over speeding",
+      "description": "AVL ID 255, the speed at which an overspeed event triggered."
+    },
+    "io254": {
+      "scale": 0.01,
+      "precision": 2,
+      "name": "Eco driving value",
+      "description": "AVL ID 254. The document gives the unit as 'G or rad' depending on configuration, so no device class is claimed."
+    },
+    "io1440": {
+      "unit": "%",
+      "name": "Accelerometer calibration quality",
+      "description": "AVL ID 1440."
+    },
+    "io1429": {
+      "unit": "mG",
+      "name": "Crash average vector",
+      "description": "AVL ID 1429."
+    },
+    "io1432": {
+      "unit": "mG",
+      "name": "Crash max vector",
+      "description": "AVL ID 1432."
+    },
+    "io1437": {
+      "unit": "°",
+      "name": "Side vector delta",
+      "description": "AVL ID 1437."
+    },
+    "io1430": {
+      "name": "Crash direction",
+      "description": "AVL ID 1430."
+    },
+    "io1431": {
+      "name": "Crash duration",
+      "description": "AVL ID 1431."
+    },
+    "io257": {
+      "name": "Crash trace data",
+      "description": "AVL ID 257."
+    },
+    "io156": {
+      "platform": "binary_sensor",
+      "name": "Manual geofence in zone",
+      "description": "AVL ID 156."
+    },
+    "io157": {
+      "platform": "binary_sensor",
+      "name": "Manual geofence speeding",
+      "description": "AVL ID 157.",
+      "device_class": "problem"
+    },
+    "io242": {
+      "platform": "binary_sensor",
+      "name": "Fall down detected",
+      "description": "AVL ID 242.",
+      "device_class": "problem"
+    },
+    "io303": {
+      "platform": "binary_sensor",
+      "name": "Instant movement",
+      "description": "AVL ID 303.",
+      "device_class": "motion"
+    },
+    "io250": {
+      "platform": "binary_sensor",
+      "name": "Trip active",
+      "description": "AVL ID 250.",
+      "device_class": "running"
+    },
+    "io841": {
+      "platform": "binary_sensor",
+      "name": "Digital output 1 overcurrent",
+      "description": "AVL ID 841.",
+      "device_class": "problem"
+    },
+    "io13361": {
+      "platform": "binary_sensor",
+      "name": "Incoming call detected",
+      "description": "AVL ID 13361."
+    },
+    "io358": {
+      "platform": "binary_sensor",
+      "name": "Custom scenario 1",
+      "description": "AVL ID 358."
+    },
+    "io359": {
+      "platform": "binary_sensor",
+      "name": "Custom scenario 2",
+      "description": "AVL ID 359."
+    },
+    "io360": {
+      "platform": "binary_sensor",
+      "name": "Custom scenario 3",
+      "description": "AVL ID 360."
+    },
+    "io69": {
+      "name": "GNSS status",
+      "description": "AVL ID 69, 0..3."
+    },
+    "io155": {
+      "name": "Manual geofence ID",
+      "description": "AVL ID 155."
+    },
+    "io237": {
+      "name": "Network type",
+      "description": "AVL ID 237."
+    },
+    "io383": {
+      "name": "Accelerometer calibration status",
+      "description": "AVL ID 383, 0..3."
+    },
+    "io391": {
+      "name": "Private/business mode",
+      "description": "AVL ID 391."
+    },
+    "io396": {
+      "name": "SECO",
+      "description": "AVL ID 396, 0..2."
+    },
+    "io641": {
+      "name": "ICCID",
+      "description": "AVL ID 641."
+    },
+    "io13266": {
+      "name": "Current active log file",
+      "description": "AVL ID 13266."
+    },
+    "io13267": {
+      "name": "Max log file count",
+      "description": "AVL ID 13267."
+    },
+    "io13372": {
+      "device_class": "signal_strength",
+      "unit": "dB",
+      "name": "Neighbouring cell 1 RSSI",
+      "description": "AVL ID 13372."
+    },
+    "io13370": {
+      "platform": "ignore",
+      "description": "AVL ID 13370, neighbouring cell 1 LAC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13371": {
+      "platform": "ignore",
+      "description": "AVL ID 13371, neighbouring cell 1 ID. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13373": {
+      "platform": "ignore",
+      "description": "AVL ID 13373, neighbouring cell 1 MNC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13374": {
+      "platform": "ignore",
+      "description": "AVL ID 13374, neighbouring cell 1 MCC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13377": {
+      "device_class": "signal_strength",
+      "unit": "dB",
+      "name": "Neighbouring cell 2 RSSI",
+      "description": "AVL ID 13377."
+    },
+    "io13375": {
+      "platform": "ignore",
+      "description": "AVL ID 13375, neighbouring cell 2 LAC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13376": {
+      "platform": "ignore",
+      "description": "AVL ID 13376, neighbouring cell 2 ID. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13378": {
+      "platform": "ignore",
+      "description": "AVL ID 13378, neighbouring cell 2 MNC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13379": {
+      "platform": "ignore",
+      "description": "AVL ID 13379, neighbouring cell 2 MCC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13382": {
+      "device_class": "signal_strength",
+      "unit": "dB",
+      "name": "Neighbouring cell 3 RSSI",
+      "description": "AVL ID 13382."
+    },
+    "io13380": {
+      "platform": "ignore",
+      "description": "AVL ID 13380, neighbouring cell 3 LAC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13381": {
+      "platform": "ignore",
+      "description": "AVL ID 13381, neighbouring cell 3 ID. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13383": {
+      "platform": "ignore",
+      "description": "AVL ID 13383, neighbouring cell 3 MNC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13384": {
+      "platform": "ignore",
+      "description": "AVL ID 13384, neighbouring cell 3 MCC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13387": {
+      "device_class": "signal_strength",
+      "unit": "dB",
+      "name": "Neighbouring cell 4 RSSI",
+      "description": "AVL ID 13387."
+    },
+    "io13385": {
+      "platform": "ignore",
+      "description": "AVL ID 13385, neighbouring cell 4 LAC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13386": {
+      "platform": "ignore",
+      "description": "AVL ID 13386, neighbouring cell 4 ID. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13388": {
+      "platform": "ignore",
+      "description": "AVL ID 13388, neighbouring cell 4 MNC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13389": {
+      "platform": "ignore",
+      "description": "AVL ID 13389, neighbouring cell 4 MCC. Changes on almost every report; enable it with a device override if you need it."
+    }
+  }
+}

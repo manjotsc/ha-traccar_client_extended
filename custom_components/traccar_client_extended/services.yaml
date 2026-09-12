@@ -1,0 +1,80 @@
+fire_test_event:
+  # A device selector field rather than `target: device:`. Home Assistant
+  # rejects a device filter on target -- "use a device selector instead" -- and
+  # the call still arrives with `device_id`, so nothing in services.py changes.
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: traccar_client_extended
+          multiple: true
+    event_type:
+      required: true
+      example: alarm_tow
+      default: alarm_tow
+      selector:
+        select:
+          mode: dropdown
+          options:
+            - alarm
+            - alarm_accident
+            - alarm_bonnet
+            - alarm_door
+            - alarm_fall_down
+            - alarm_fatigue_driving
+            - alarm_fault
+            - alarm_foot_brake
+            - alarm_fuel_leak
+            - alarm_general
+            - alarm_geofence
+            - alarm_geofence_enter
+            - alarm_geofence_exit
+            - alarm_gps_antenna_cut
+            - alarm_hard_acceleration
+            - alarm_hard_braking
+            - alarm_hard_cornering
+            - alarm_high_rpm
+            - alarm_idle
+            - alarm_jamming
+            - alarm_lane_change
+            - alarm_lock
+            - alarm_low_battery
+            - alarm_low_power
+            - alarm_lowspeed
+            - alarm_movement
+            - alarm_overspeed
+            - alarm_parking
+            - alarm_power_cut
+            - alarm_power_off
+            - alarm_power_on
+            - alarm_power_restored
+            - alarm_removing
+            - alarm_sos
+            - alarm_tampering
+            - alarm_temperature
+            - alarm_tow
+            - alarm_unlock
+            - alarm_vibration
+            - command_result
+            - device_fuel_drop
+            - device_fuel_increase
+            - device_inactive
+            - device_moving
+            - device_offline
+            - device_online
+            - device_overspeed
+            - device_stopped
+            - device_unknown
+            - driver_changed
+            - geofence_crossed
+            - geofence_enter
+            - geofence_exit
+            - ignition_off
+            - ignition_on
+            - maintenance
+            - media
+            - proximity_enter
+            - proximity_exit
+            - queued_command_sent
+            - unaccompanied_motion

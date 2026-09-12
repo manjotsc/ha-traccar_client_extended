@@ -1,0 +1,262 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Traccar Server",
+        "description": "Signing in needs nothing set up in Traccar first — Home Assistant generates its own API token and does not store your password.",
+        "menu_options": {
+          "credentials": "Sign in with your Traccar account",
+          "token": "Use an API token I generated myself"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate with Traccar Server",
+        "description": "The API token for {host}:{port} is no longer accepted. Traccar tokens can carry an expiry date; generate a new one and enter it below.",
+        "data": {
+          "api_token": "API token"
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure Traccar Server",
+        "description": "Change where this Traccar server is reached. Entity IDs and history are kept.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "api_token": "API token",
+          "ssl": "Uses an SSL certificate",
+          "verify_ssl": "Verify SSL certificate",
+          "create_notifications": "Set up Traccar to push events instantly"
+        }
+      },
+      "credentials": {
+        "title": "Sign in to Traccar Server",
+        "description": "Your password is used once to generate an API token and is not stored. The token inherits this user's permissions, so a non-admin account only sees its own devices.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "email": "Email",
+          "password": "Password",
+          "ssl": "Uses an SSL certificate",
+          "verify_ssl": "Verify SSL certificate",
+          "create_notifications": "Set up Traccar to push events instantly"
+        },
+        "data_description": {
+          "create_notifications": "Creates one always-on Web notification on your Traccar server per event type. Traccar pushes an event to Home Assistant only when a Web notification matches it, so without them no event ever arrives. Narrow the set with the events option if you would rather have fewer objects on the server."
+        }
+      },
+      "token": {
+        "title": "Connect with an API token",
+        "description": "Generate an API token in Traccar under Settings → Account. The token inherits that user's permissions, so a non-admin token only sees that user's own devices.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "api_token": "API token",
+          "ssl": "Uses an SSL certificate",
+          "verify_ssl": "Verify SSL certificate",
+          "create_notifications": "Set up Traccar to push events instantly"
+        },
+        "data_description": {
+          "create_notifications": "Creates one always-on Web notification on your Traccar server per event type. Traccar pushes an event to Home Assistant only when a Web notification matches it, so without them no event ever arrives. Narrow the set with the events option if you would rather have fewer objects on the server."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect",
+      "invalid_auth": "Invalid authentication",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This Traccar server is already configured",
+      "reauth_successful": "Reauthentication was successful",
+      "reconfigure_successful": "Reconfiguration was successful",
+      "no_token": "Traccar signed in but would not generate an API token for this account."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Traccar Client Extended options",
+        "description": "Server connection settings live under Reconfigure on the integration page; per-device settings live on each device's sub-entry.",
+        "menu_options": {
+          "events": "Events",
+          "position": "Position filtering",
+          "attributes": "Attributes and entities",
+          "devices": "Devices"
+        }
+      },
+      "events": {
+        "title": "Events",
+        "description": "Traccar pushes events over the websocket as they happen — nothing here polls for them. This controls which ones Home Assistant acts on.",
+        "data": {
+          "events": "Events to handle"
+        },
+        "data_description": {
+          "events": "Leave empty for all of them. This filters what Home Assistant does with an event, not what Traccar sends: a type still needs a matching Web notification in Traccar before it is pushed at all."
+        }
+      },
+      "position": {
+        "title": "Position filtering",
+        "description": "What to do with fixes that are not precise enough to trust. Nothing is filtered by default — Traccar's readings are reported as they arrive.",
+        "data": {
+          "max_accuracy": "Ignore positions less accurate than",
+          "skip_accuracy_filter_for": "Never filter positions carrying these attributes"
+        },
+        "data_description": {
+          "max_accuracy": "Positions less accurate than this are ignored and the last good fix is kept, which stops GPS jitter triggering false zone changes.",
+          "skip_accuracy_filter_for": "Attribute names whose presence exempts a position from the accuracy filter, for trackers that report a poor accuracy figure alongside a fix you still want."
+        }
+      },
+      "attributes": {
+        "title": "Attributes and entities",
+        "description": "Which of a device's reported attributes become entities. The list below is built from what your fleet is sending, so it is this server's attributes and nothing else.",
+        "data": {
+          "ignored_attributes": "Attributes to ignore",
+          "discover_unknown_attributes": "Create entities for unrecognised attributes",
+          "max_discovered_attributes": "Maximum unrecognised attributes per device",
+          "attribute_overrides": "Attribute overrides",
+          "custom_attributes": "Also copy these attributes onto the device tracker"
+        },
+        "data_description": {
+          "discover_unknown_attributes": "Attributes without a built-in mapping still become entities, inferred from their value type, so nothing is silently dropped.",
+          "max_discovered_attributes": "A cap so a chatty tracker cannot create an unbounded number of entities. Attributes with a built-in mapping do not count towards it.",
+          "attribute_overrides": "Reinterpret a value Traccar does not decode. Teltonika reports an external voltage as a raw io800 of 12500, for example: set Attribute io800, device class Voltage, unit V and multiply by 0.001 to get 12.5 V. Leave a column empty to keep what the attribute would have had. Rename an entity or change its decimal places in Home Assistant's own entity settings, not here. To turn an attribute off entirely, use the picker above.",
+          "custom_attributes": "Copies these onto the device tracker as extra state attributes, for templates written against core's traccar_server integration.",
+          "ignored_attributes": "Picked from what your devices are actually reporting right now. Anything selected here creates no entity, on every device. Use it for opaque payloads and identifiers that change on every fix and would otherwise become a sensor that never settles."
+        }
+      },
+      "devices": {
+        "title": "Devices",
+        "description": "Each Traccar device is a sub-entry, which is where its profile and per-device overrides live. Add and remove them from the integration page.",
+        "data": {
+          "auto_add_devices": "Automatically add new devices",
+          "confirm": "Re-add every device I have deleted"
+        },
+        "data_description": {
+          "auto_add_devices": "New devices on the server become sub-entries automatically. Turn this off to add them by hand, which is what you want if the token can see a large fleet.",
+          "confirm": "Deleting a device records it as already seen, which is what stops it being added back automatically. This clears that record, so every device on the Traccar server is treated as new again and the ones you deleted return.\n\nNothing else is changed, and devices you still have keep their settings. If \"Automatically add new devices\" is switched off, this has no visible effect until you turn it back on."
+        }
+      }
+    },
+    "error": {
+      "attribute_ignored_and_overridden": "One attribute is both ticked in “Attributes to ignore” and given a row in the overrides table. Those are the same setting layer, so the row would win and the tick would do nothing. Remove one of the two, or move the row to the device that needs it — a per-device override outranks the fleet-wide tick on purpose.",
+      "device_class_needs_unit": "One override sets a device class that requires a unit and leaves the unit empty. The log names the attribute and lists the units it accepts.",
+      "invalid_device_class_unit": "One override pairs a device class with a unit Home Assistant does not accept for it. Home Assistant would store that without complaint and then quietly leave the sensor out of long-term statistics, so the value would look right on a card while its history stayed empty. The log names the attribute and lists the units that device class does accept."
+    }
+  },
+  "config_subentries": {
+    "device": {
+      "initiate_flow": {
+        "user": "Add device",
+        "reconfigure": "Reconfigure device"
+      },
+      "entry_type": "Device",
+      "title": "Device",
+      "step": {
+        "user": {
+          "title": "Add a device",
+          "description": "Pick a device from the Traccar server to track in Home Assistant.",
+          "data": {
+            "device_profile": "Device profile",
+            "device_unique_id": "Device",
+            "attribute_overrides": "Attribute overrides"
+          },
+          "data_description": {
+            "device_profile": "Leave on Automatic and any device whose Traccar model matches a profile is configured from it, so a fleet of identical trackers is set up once rather than one device at a time. Pick a profile to force a specific one, or No profile to turn matching off for this device.",
+            "attribute_overrides": "Applied on top of this device's profile, for one tracker rather than the whole fleet. Same columns as the server-wide table."
+          }
+        },
+        "reconfigure": {
+          "title": "Configure {device}",
+          "description": "Settings that apply only to this device.",
+          "data": {
+            "device_profile": "Device profile",
+            "attribute_overrides": "Attribute overrides",
+            "max_accuracy": "Maximum accuracy (metres, 0 disables)"
+          },
+          "data_description": {
+            "device_profile": "Leave on Automatic and any device whose Traccar model matches a profile is configured from it, so a fleet of identical trackers is set up once rather than one device at a time. Pick a profile to force a specific one, or No profile to turn matching off for this device. Your own overrides below are layered on top, so you can correct or extend a profile without editing it.",
+            "attribute_overrides": "Applied on top of this device's profile, for one tracker rather than the whole fleet. Same columns as the server-wide table.",
+            "max_accuracy": "Overrides the server-wide filter for this device. A phone usually needs one where a hardwired tracker does not."
+          }
+        }
+      },
+      "abort": {
+        "no_devices": "Every device on this Traccar server already has a sub-entry.",
+        "reconfigure_successful": "Device settings were updated",
+        "entry_not_loaded": "This Traccar server is not connected right now, so its device list is unavailable. Fix the connection and try again."
+      },
+      "error": {
+        "invalid_device_class_unit": "One override pairs a device class with a unit Home Assistant does not accept for it. Home Assistant would store that without complaint and then quietly leave the sensor out of long-term statistics, so the value would look right on a card while its history stayed empty. The log names the attribute and lists the units that device class does accept.",
+        "device_class_needs_unit": "One override sets a device class that requires a unit and leaves the unit empty. The log names the attribute and lists the units it accepts."
+      }
+    }
+  },
+  "issues": {
+    "subscription_failed": {
+      "title": "Traccar live updates have stopped",
+      "description": "Home Assistant can still read from {name} over its REST API, but the websocket subscription keeps failing, so entities exist and will not update. The last error was: {error}\n\nThe usual cause is the session cookie being rejected. Traccar authenticates the websocket with a cookie obtained from /api/session rather than with the API token. Check that the host and port are reachable and that the server is not behind a proxy that strips cookies or blocks websocket upgrades."
+    },
+    "no_web_notification": {
+      "title": "Traccar is not sending events to Home Assistant",
+      "fix_flow": {
+        "step": {
+          "confirm": {
+            "title": "Create Traccar notifications",
+            "description": "Traccar only pushes an event to Home Assistant when a Notification with the Web channel matches it. {name} has none, so event entities will never fire.\n\nChoose the events you want and they will be created in Traccar as always-on Web notifications. The alarm one is created with every alarm type selected, because Traccar ignores an alarm notification that lists none.",
+            "data": {
+              "types": "Events to receive"
+            }
+          }
+        },
+        "abort": {
+          "entry_not_loaded": "This Traccar server is not connected right now.",
+          "create_failed": "Traccar refused to create them, and its error says nothing useful — a permission failure comes back as a plain “400 Bad Request”.\n\nThe usual cause is the readonly flag on the account whose API token this integration uses, set either on that user or server-wide. It blocks creating notifications while leaving everything else working, which is why devices and sensors are fine and only events are missing. Administrator rights are not needed: an ordinary Traccar user may create their own notifications. If that user has no Settings → Notifications entry in Traccar, readonly is the reason.\n\nUntick readonly for that user, run this fix again, then tick it back on. Readonly blocks writing, never receiving, so the notifications keep delivering afterwards.\n\nIf the flag has to stay on, an administrator can create the Web notifications and link them to this user under Settings → Users → Connections → Notifications."
+        }
+      }
+    },
+    "alarm_notification_empty": {
+      "title": "A Traccar alarm notification lists no alarms",
+      "description": "{name} has an alarm notification on the Web channel with no alarms selected. Traccar treats that as matching nothing, so no alarm — including tow, jamming or tampering — will ever reach Home Assistant.\n\nEdit it in Traccar under Settings → Notifications and choose the alarms you want."
+    },
+    "server_buffering": {
+      "title": "Traccar is delaying every update by {delay} seconds",
+      "description": "Positions and events from {name} reach Home Assistant about {delay} seconds after Traccar receives them, and the delay is too consistent to be load.\n\nThat is Traccar's `server.buffering.threshold` setting, which holds every incoming position so it can reorder ones that arrive out of sequence. It defaults to 3000 milliseconds and there is no API to change it, so it has to be edited on the server.\n\nOpen `conf/traccar.xml` on the Traccar server and add an entry inside the properties block, with the key `server.buffering.threshold` and the value `500`, then restart Traccar.\n\n500 keeps the reordering that matters for a tracker flushing a stored backlog while removing most of the delay. Use 0 to remove it entirely, if nothing on this server reports positions out of order.\n\nThis notice clears itself once updates start arriving sooner."
+    }
+  },
+  "services": {
+    "fire_test_event": {
+      "name": "Fire test event",
+      "description": "Publishes a synthetic Traccar event for a device, so an automation can be tested without waiting for the real thing to happen. It travels the same path a genuine event does, so the device's Event entity fires and the matching bus event is sent. The payload carries test: true in its attributes.",
+      "fields": {
+        "device_id": {
+          "name": "Device",
+          "description": "The tracked device to publish the event for."
+        },
+        "event_type": {
+          "name": "Event type",
+          "description": "The event to publish. Alarms are listed individually, so alarm_tow sends an alarm event with alarm: tow in its attributes, exactly as Traccar would."
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "device_not_found": {
+      "message": "That device is not in the device registry."
+    },
+    "device_not_tracked": {
+      "message": "No loaded Traccar Client Extended device matched the target. The config entry may be reloading, or the device may no longer exist on the server."
+    },
+    "unknown_event_type": {
+      "message": "Unknown event type: {event_type}."
+    }
+  },
+  "selector": {
+    "override_treat_as": {
+      "options": {
+        "sensor": "Sensor",
+        "binary_sensor": "Binary sensor (on/off)",
+        "ignore": "Ignore (no entity)"
+      }
+    }
+  }
+}

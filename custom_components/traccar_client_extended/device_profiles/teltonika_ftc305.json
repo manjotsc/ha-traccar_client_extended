@@ -1,0 +1,1147 @@
+{
+  "name": "teltonika_ftc305",
+  "display_name": "Teltonika FTC305",
+  "vendor": "Teltonika",
+  "description": "AVL parameters Traccar's Teltonika decoder leaves as raw io<id> values, from the Teltonika Telematics wiki page for the FTC305. Generated from the published table: units and multipliers are taken from it directly. Opaque payloads (Manual CAN), identifiers (MAC address, Name, Dallas sensor IDs) and high-churn cell data are set to ignore so they do not flood the recorder.",
+  "protocols": [
+    "teltonika"
+  ],
+  "models": [
+    "FTC305"
+  ],
+  "attributes": {
+    "io20": {
+      "name": "Battery Voltage 2",
+      "description": "AVL ID 20.",
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2
+    },
+    "io22": {
+      "name": "Battery Voltage 3",
+      "description": "AVL ID 22.",
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2
+    },
+    "io23": {
+      "name": "Battery Voltage 4",
+      "description": "AVL ID 23.",
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2
+    },
+    "io29": {
+      "name": "Battery Voltage 1",
+      "description": "AVL ID 29.",
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2
+    },
+    "io69": {
+      "name": "GNSS Status",
+      "description": "AVL ID 69."
+    },
+    "io70": {
+      "name": "PCB temperature",
+      "description": "AVL ID 70.",
+      "device_class": "temperature",
+      "unit": "°C",
+      "scale": 0.1,
+      "precision": 1
+    },
+    "io71": {
+      "platform": "ignore",
+      "description": "AVL ID 71, Dallas Temperature ID 4. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io76": {
+      "platform": "ignore",
+      "description": "AVL ID 76, Dallas Temperature ID 1. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io77": {
+      "platform": "ignore",
+      "description": "AVL ID 77, Dallas Temperature ID 2. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io79": {
+      "platform": "ignore",
+      "description": "AVL ID 79, Dallas Temperature ID 3. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io86": {
+      "name": "Humidity 1",
+      "description": "AVL ID 86.",
+      "device_class": "humidity",
+      "unit": "%",
+      "scale": 0.1,
+      "precision": 0
+    },
+    "io104": {
+      "name": "Humidity 2",
+      "description": "AVL ID 104.",
+      "device_class": "humidity",
+      "unit": "%",
+      "scale": 0.1,
+      "precision": 0
+    },
+    "io106": {
+      "name": "Humidity 3",
+      "description": "AVL ID 106.",
+      "device_class": "humidity",
+      "unit": "%",
+      "scale": 0.1,
+      "precision": 0
+    },
+    "io108": {
+      "name": "Humidity 4",
+      "description": "AVL ID 108.",
+      "device_class": "humidity",
+      "unit": "%",
+      "scale": 0.1,
+      "precision": 0
+    },
+    "io155": {
+      "name": "Manual Geofence ID",
+      "description": "AVL ID 155."
+    },
+    "io156": {
+      "platform": "binary_sensor",
+      "name": "Manual Geofence In-zone event",
+      "description": "AVL ID 156."
+    },
+    "io157": {
+      "platform": "binary_sensor",
+      "name": "Manual Geofence Speeding event",
+      "description": "AVL ID 157."
+    },
+    "io237": {
+      "platform": "binary_sensor",
+      "name": "Network Type",
+      "description": "AVL ID 237."
+    },
+    "io242": {
+      "platform": "binary_sensor",
+      "name": "Fall down detection",
+      "description": "AVL ID 242.",
+      "device_class": "problem"
+    },
+    "io248": {
+      "name": "Immobilizer",
+      "description": "AVL ID 248."
+    },
+    "io250": {
+      "platform": "binary_sensor",
+      "name": "Trip",
+      "description": "AVL ID 250."
+    },
+    "io254": {
+      "name": "Eco driving value",
+      "description": "AVL ID 254.",
+      "unit": "G  or  rad",
+      "scale": 0.01
+    },
+    "io255": {
+      "name": "Over Speeding",
+      "description": "AVL ID 255.",
+      "device_class": "speed",
+      "unit": "km/h"
+    },
+    "io257": {
+      "name": "Crash trace data",
+      "description": "AVL ID 257."
+    },
+    "io303": {
+      "platform": "binary_sensor",
+      "name": "Instant Movement",
+      "description": "AVL ID 303.",
+      "device_class": "motion"
+    },
+    "io358": {
+      "platform": "binary_sensor",
+      "name": "Custom scenario 1",
+      "description": "AVL ID 358."
+    },
+    "io359": {
+      "platform": "binary_sensor",
+      "name": "Custom scenario 2",
+      "description": "AVL ID 359."
+    },
+    "io360": {
+      "platform": "binary_sensor",
+      "name": "Custom scenario 3",
+      "description": "AVL ID 360."
+    },
+    "io383": {
+      "name": "Accelerometer calibration status",
+      "description": "AVL ID 383."
+    },
+    "io386": {
+      "name": "Time from last fix",
+      "description": "AVL ID 386.",
+      "device_class": "duration",
+      "unit": "s"
+    },
+    "io391": {
+      "name": "Private/Business",
+      "description": "AVL ID 391."
+    },
+    "io449": {
+      "name": "Ignition On Counter",
+      "description": "AVL ID 449.",
+      "device_class": "duration",
+      "unit": "s"
+    },
+    "io523": {
+      "name": "Battery Voltage 5",
+      "description": "AVL ID 523.",
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2
+    },
+    "io525": {
+      "name": "Humidity 5",
+      "description": "AVL ID 525.",
+      "device_class": "humidity",
+      "unit": "%",
+      "scale": 0.1,
+      "precision": 0
+    },
+    "io641": {
+      "name": "ICCID",
+      "description": "AVL ID 641."
+    },
+    "io841": {
+      "platform": "binary_sensor",
+      "name": "Digital Output 1 Overcurrent",
+      "description": "AVL ID 841.",
+      "device_class": "problem"
+    },
+    "io842": {
+      "platform": "binary_sensor",
+      "name": "Digital Output 2 Overcurrent",
+      "description": "AVL ID 842.",
+      "device_class": "problem"
+    },
+    "io1148": {
+      "name": "Connectivity quality",
+      "description": "AVL ID 1148.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io1429": {
+      "name": "Crash average vector",
+      "description": "AVL ID 1429.",
+      "unit": "mG"
+    },
+    "io1430": {
+      "name": "Crash direction",
+      "description": "AVL ID 1430."
+    },
+    "io1431": {
+      "name": "Crash duration",
+      "description": "AVL ID 1431."
+    },
+    "io1432": {
+      "name": "Crash max vector",
+      "description": "AVL ID 1432.",
+      "unit": "mG"
+    },
+    "io1437": {
+      "name": "Side Vector Delta",
+      "description": "AVL ID 1437.",
+      "unit": "°"
+    },
+    "io1440": {
+      "name": "Accel Calibration Quality",
+      "description": "AVL ID 1440.",
+      "unit": "%"
+    },
+    "io1474": {
+      "platform": "binary_sensor",
+      "name": "Beacon Presence",
+      "description": "AVL ID 1474."
+    },
+    "io10216": {
+      "platform": "ignore",
+      "description": "AVL ID 10216, Manual CAN 0. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10217": {
+      "platform": "ignore",
+      "description": "AVL ID 10217, Manual CAN 1. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10218": {
+      "platform": "ignore",
+      "description": "AVL ID 10218, Manual CAN 2. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10219": {
+      "platform": "ignore",
+      "description": "AVL ID 10219, Manual CAN 3. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10220": {
+      "platform": "ignore",
+      "description": "AVL ID 10220, Manual CAN 4. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10221": {
+      "platform": "ignore",
+      "description": "AVL ID 10221, Manual CAN 5. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10222": {
+      "platform": "ignore",
+      "description": "AVL ID 10222, Manual CAN 6. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10223": {
+      "platform": "ignore",
+      "description": "AVL ID 10223, Manual CAN 7. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10224": {
+      "platform": "ignore",
+      "description": "AVL ID 10224, Manual CAN 8. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10225": {
+      "platform": "ignore",
+      "description": "AVL ID 10225, Manual CAN 9. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10226": {
+      "platform": "ignore",
+      "description": "AVL ID 10226, Manual CAN 10. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10227": {
+      "platform": "ignore",
+      "description": "AVL ID 10227, Manual CAN 11. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10228": {
+      "platform": "ignore",
+      "description": "AVL ID 10228, Manual CAN 12. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10229": {
+      "platform": "ignore",
+      "description": "AVL ID 10229, Manual CAN 13. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10230": {
+      "platform": "ignore",
+      "description": "AVL ID 10230, Manual CAN 14. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10231": {
+      "platform": "ignore",
+      "description": "AVL ID 10231, Manual CAN 15. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10232": {
+      "platform": "ignore",
+      "description": "AVL ID 10232, Manual CAN 16. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10233": {
+      "platform": "ignore",
+      "description": "AVL ID 10233, Manual CAN 17. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10234": {
+      "platform": "ignore",
+      "description": "AVL ID 10234, Manual CAN 18. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10235": {
+      "platform": "ignore",
+      "description": "AVL ID 10235, Manual CAN 19. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10298": {
+      "platform": "ignore",
+      "description": "AVL ID 10298, Manual CAN 20. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10299": {
+      "platform": "ignore",
+      "description": "AVL ID 10299, Manual CAN 21. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10300": {
+      "platform": "ignore",
+      "description": "AVL ID 10300, Manual CAN 22. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10301": {
+      "platform": "ignore",
+      "description": "AVL ID 10301, Manual CAN 23. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10302": {
+      "platform": "ignore",
+      "description": "AVL ID 10302, Manual CAN 24. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10303": {
+      "platform": "ignore",
+      "description": "AVL ID 10303, Manual CAN 25. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10304": {
+      "platform": "ignore",
+      "description": "AVL ID 10304, Manual CAN 26. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10305": {
+      "platform": "ignore",
+      "description": "AVL ID 10305, Manual CAN 27. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10306": {
+      "platform": "ignore",
+      "description": "AVL ID 10306, Manual CAN 28. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10307": {
+      "platform": "ignore",
+      "description": "AVL ID 10307, Manual CAN 29. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10308": {
+      "platform": "ignore",
+      "description": "AVL ID 10308, Manual CAN 30. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10309": {
+      "platform": "ignore",
+      "description": "AVL ID 10309, Manual CAN 31. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10310": {
+      "platform": "ignore",
+      "description": "AVL ID 10310, Manual CAN 32. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10311": {
+      "platform": "ignore",
+      "description": "AVL ID 10311, Manual CAN 33. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10312": {
+      "platform": "ignore",
+      "description": "AVL ID 10312, Manual CAN 34. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10313": {
+      "platform": "ignore",
+      "description": "AVL ID 10313, Manual CAN 35. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10314": {
+      "platform": "ignore",
+      "description": "AVL ID 10314, Manual CAN 36. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10315": {
+      "platform": "ignore",
+      "description": "AVL ID 10315, Manual CAN 37. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10316": {
+      "platform": "ignore",
+      "description": "AVL ID 10316, Manual CAN 38. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10317": {
+      "platform": "ignore",
+      "description": "AVL ID 10317, Manual CAN 39. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10318": {
+      "platform": "ignore",
+      "description": "AVL ID 10318, Manual CAN 40. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10319": {
+      "platform": "ignore",
+      "description": "AVL ID 10319, Manual CAN 41. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10320": {
+      "platform": "ignore",
+      "description": "AVL ID 10320, Manual CAN 42. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10321": {
+      "platform": "ignore",
+      "description": "AVL ID 10321, Manual CAN 43. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10322": {
+      "platform": "ignore",
+      "description": "AVL ID 10322, Manual CAN 44. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10323": {
+      "platform": "ignore",
+      "description": "AVL ID 10323, Manual CAN 45. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10324": {
+      "platform": "ignore",
+      "description": "AVL ID 10324, Manual CAN 46. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10325": {
+      "platform": "ignore",
+      "description": "AVL ID 10325, Manual CAN 47. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10326": {
+      "platform": "ignore",
+      "description": "AVL ID 10326, Manual CAN 48. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10327": {
+      "platform": "ignore",
+      "description": "AVL ID 10327, Manual CAN 49. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10328": {
+      "platform": "ignore",
+      "description": "AVL ID 10328, Manual CAN 50. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10329": {
+      "platform": "ignore",
+      "description": "AVL ID 10329, Manual CAN 51. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10330": {
+      "platform": "ignore",
+      "description": "AVL ID 10330, Manual CAN 52. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10331": {
+      "platform": "ignore",
+      "description": "AVL ID 10331, Manual CAN 53. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10332": {
+      "platform": "ignore",
+      "description": "AVL ID 10332, Manual CAN 54. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10333": {
+      "platform": "ignore",
+      "description": "AVL ID 10333, Manual CAN 55. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10334": {
+      "platform": "ignore",
+      "description": "AVL ID 10334, Manual CAN 56. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10335": {
+      "platform": "ignore",
+      "description": "AVL ID 10335, Manual CAN 57. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10336": {
+      "platform": "ignore",
+      "description": "AVL ID 10336, Manual CAN 58. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10337": {
+      "platform": "ignore",
+      "description": "AVL ID 10337, Manual CAN 59. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10338": {
+      "platform": "ignore",
+      "description": "AVL ID 10338, Manual CAN 60. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10339": {
+      "platform": "ignore",
+      "description": "AVL ID 10339, Manual CAN 61. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10340": {
+      "platform": "ignore",
+      "description": "AVL ID 10340, Manual CAN 62. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10341": {
+      "platform": "ignore",
+      "description": "AVL ID 10341, Manual CAN 63. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10342": {
+      "platform": "ignore",
+      "description": "AVL ID 10342, Manual CAN 64. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10343": {
+      "platform": "ignore",
+      "description": "AVL ID 10343, Manual CAN 65. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10344": {
+      "platform": "ignore",
+      "description": "AVL ID 10344, Manual CAN 66. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10345": {
+      "platform": "ignore",
+      "description": "AVL ID 10345, Manual CAN 67. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10346": {
+      "platform": "ignore",
+      "description": "AVL ID 10346, Manual CAN 68. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10347": {
+      "platform": "ignore",
+      "description": "AVL ID 10347, Manual CAN 69. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io10808": {
+      "platform": "binary_sensor",
+      "name": "Magnet 1",
+      "description": "AVL ID 10808."
+    },
+    "io10809": {
+      "platform": "binary_sensor",
+      "name": "Magnet 2",
+      "description": "AVL ID 10809."
+    },
+    "io10810": {
+      "platform": "binary_sensor",
+      "name": "Magnet 3",
+      "description": "AVL ID 10810."
+    },
+    "io10811": {
+      "platform": "binary_sensor",
+      "name": "Magnet 4",
+      "description": "AVL ID 10811."
+    },
+    "io10812": {
+      "name": "Movement Count 1",
+      "description": "AVL ID 10812."
+    },
+    "io10813": {
+      "name": "Movement Count 2",
+      "description": "AVL ID 10813."
+    },
+    "io10814": {
+      "name": "Movement Count 3",
+      "description": "AVL ID 10814."
+    },
+    "io10815": {
+      "name": "Movement Count 4",
+      "description": "AVL ID 10815."
+    },
+    "io10816": {
+      "name": "Pitch 1",
+      "description": "AVL ID 10816.",
+      "unit": "°"
+    },
+    "io10817": {
+      "name": "Pitch 2",
+      "description": "AVL ID 10817.",
+      "unit": "°"
+    },
+    "io10818": {
+      "name": "Pitch 3",
+      "description": "AVL ID 10818.",
+      "unit": "°"
+    },
+    "io10819": {
+      "name": "Pitch 4",
+      "description": "AVL ID 10819.",
+      "unit": "°"
+    },
+    "io10820": {
+      "platform": "binary_sensor",
+      "name": "Low Battery 1",
+      "description": "AVL ID 10820.",
+      "device_class": "battery"
+    },
+    "io10821": {
+      "platform": "binary_sensor",
+      "name": "Low Battery 2",
+      "description": "AVL ID 10821.",
+      "device_class": "battery"
+    },
+    "io10822": {
+      "platform": "binary_sensor",
+      "name": "Low Battery 3",
+      "description": "AVL ID 10822.",
+      "device_class": "battery"
+    },
+    "io10823": {
+      "platform": "binary_sensor",
+      "name": "Low Battery 4",
+      "description": "AVL ID 10823.",
+      "device_class": "battery"
+    },
+    "io13222": {
+      "name": "Battery Voltage 6",
+      "description": "AVL ID 13222.",
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2
+    },
+    "io13223": {
+      "name": "Battery Voltage 7",
+      "description": "AVL ID 13223.",
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2
+    },
+    "io13224": {
+      "name": "Battery Voltage 8",
+      "description": "AVL ID 13224.",
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2
+    },
+    "io13225": {
+      "name": "Battery Voltage 9",
+      "description": "AVL ID 13225.",
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2
+    },
+    "io13226": {
+      "name": "Battery Voltage 10",
+      "description": "AVL ID 13226.",
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2
+    },
+    "io13227": {
+      "name": "Temperature 5",
+      "description": "AVL ID 13227.",
+      "device_class": "temperature",
+      "unit": "°C",
+      "scale": 0.1,
+      "precision": 1
+    },
+    "io13228": {
+      "name": "Temperature 6",
+      "description": "AVL ID 13228.",
+      "device_class": "temperature",
+      "unit": "°C",
+      "scale": 0.1,
+      "precision": 1
+    },
+    "io13229": {
+      "name": "Temperature 7",
+      "description": "AVL ID 13229.",
+      "device_class": "temperature",
+      "unit": "°C",
+      "scale": 0.1,
+      "precision": 1
+    },
+    "io13230": {
+      "name": "Temperature 8",
+      "description": "AVL ID 13230.",
+      "device_class": "temperature",
+      "unit": "°C",
+      "scale": 0.1,
+      "precision": 1
+    },
+    "io13231": {
+      "name": "Temperature 9",
+      "description": "AVL ID 13231.",
+      "device_class": "temperature",
+      "unit": "°C",
+      "scale": 0.1,
+      "precision": 1
+    },
+    "io13232": {
+      "name": "Temperature 10",
+      "description": "AVL ID 13232.",
+      "device_class": "temperature",
+      "unit": "°C",
+      "scale": 0.1,
+      "precision": 1
+    },
+    "io13233": {
+      "name": "RSSI 1",
+      "description": "AVL ID 13233.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io13234": {
+      "name": "RSSI 2",
+      "description": "AVL ID 13234.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io13235": {
+      "name": "RSSI 3",
+      "description": "AVL ID 13235.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io13236": {
+      "name": "RSSI 4",
+      "description": "AVL ID 13236.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io13237": {
+      "name": "RSSI 5",
+      "description": "AVL ID 13237.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io13238": {
+      "name": "RSSI 6",
+      "description": "AVL ID 13238.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io13239": {
+      "name": "RSSI 7",
+      "description": "AVL ID 13239.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io13240": {
+      "name": "RSSI 8",
+      "description": "AVL ID 13240.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io13241": {
+      "name": "RSSI 9",
+      "description": "AVL ID 13241.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io13242": {
+      "name": "RSSI 10",
+      "description": "AVL ID 13242.",
+      "device_class": "signal_strength",
+      "unit": "dBm"
+    },
+    "io13243": {
+      "platform": "ignore",
+      "description": "AVL ID 13243, MAC address 1. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13244": {
+      "platform": "ignore",
+      "description": "AVL ID 13244, MAC address 2. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13245": {
+      "platform": "ignore",
+      "description": "AVL ID 13245, MAC address 3. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13246": {
+      "platform": "ignore",
+      "description": "AVL ID 13246, MAC address 4. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13247": {
+      "platform": "ignore",
+      "description": "AVL ID 13247, MAC address 5. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13248": {
+      "platform": "ignore",
+      "description": "AVL ID 13248, MAC address 6. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13249": {
+      "platform": "ignore",
+      "description": "AVL ID 13249, MAC address 7. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13250": {
+      "platform": "ignore",
+      "description": "AVL ID 13250, MAC address 8. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13251": {
+      "platform": "ignore",
+      "description": "AVL ID 13251, MAC address 9. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13252": {
+      "platform": "ignore",
+      "description": "AVL ID 13252, MAC address 10. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13253": {
+      "platform": "binary_sensor",
+      "name": "Low Battery 5",
+      "description": "AVL ID 13253.",
+      "device_class": "battery"
+    },
+    "io13254": {
+      "platform": "binary_sensor",
+      "name": "Low Battery 6",
+      "description": "AVL ID 13254.",
+      "device_class": "battery"
+    },
+    "io13255": {
+      "platform": "binary_sensor",
+      "name": "Low Battery 7",
+      "description": "AVL ID 13255.",
+      "device_class": "battery"
+    },
+    "io13256": {
+      "platform": "binary_sensor",
+      "name": "Low Battery 8",
+      "description": "AVL ID 13256.",
+      "device_class": "battery"
+    },
+    "io13257": {
+      "platform": "binary_sensor",
+      "name": "Low Battery 9",
+      "description": "AVL ID 13257.",
+      "device_class": "battery"
+    },
+    "io13258": {
+      "platform": "binary_sensor",
+      "name": "Low Battery 10",
+      "description": "AVL ID 13258.",
+      "device_class": "battery"
+    },
+    "io13266": {
+      "name": "Current active log file",
+      "description": "AVL ID 13266."
+    },
+    "io13267": {
+      "name": "Max log file count",
+      "description": "AVL ID 13267."
+    },
+    "io13325": {
+      "platform": "ignore",
+      "description": "AVL ID 13325, Name 1. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13326": {
+      "platform": "ignore",
+      "description": "AVL ID 13326, Name 2. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13327": {
+      "platform": "ignore",
+      "description": "AVL ID 13327, Name 3. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13328": {
+      "platform": "ignore",
+      "description": "AVL ID 13328, Name 4. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13329": {
+      "platform": "ignore",
+      "description": "AVL ID 13329, Name 5. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13330": {
+      "platform": "ignore",
+      "description": "AVL ID 13330, Name 6. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13331": {
+      "platform": "ignore",
+      "description": "AVL ID 13331, Name 7. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13332": {
+      "platform": "ignore",
+      "description": "AVL ID 13332, Name 8. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13333": {
+      "platform": "ignore",
+      "description": "AVL ID 13333, Name 9. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13334": {
+      "platform": "ignore",
+      "description": "AVL ID 13334, Name 10. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13335": {
+      "name": "Humidity 6",
+      "description": "AVL ID 13335.",
+      "device_class": "humidity",
+      "unit": "%",
+      "scale": 0.1,
+      "precision": 0
+    },
+    "io13336": {
+      "name": "Humidity 7",
+      "description": "AVL ID 13336.",
+      "device_class": "humidity",
+      "unit": "%",
+      "scale": 0.1,
+      "precision": 0
+    },
+    "io13337": {
+      "name": "Humidity 8",
+      "description": "AVL ID 13337.",
+      "device_class": "humidity",
+      "unit": "%",
+      "scale": 0.1,
+      "precision": 0
+    },
+    "io13338": {
+      "name": "Humidity 9",
+      "description": "AVL ID 13338.",
+      "device_class": "humidity",
+      "unit": "%",
+      "scale": 0.1,
+      "precision": 0
+    },
+    "io13339": {
+      "name": "Humidity 10",
+      "description": "AVL ID 13339.",
+      "device_class": "humidity",
+      "unit": "%",
+      "scale": 0.1,
+      "precision": 0
+    },
+    "io13361": {
+      "platform": "binary_sensor",
+      "name": "Incoming call detection",
+      "description": "AVL ID 13361."
+    },
+    "io13370": {
+      "platform": "ignore",
+      "description": "AVL ID 13370, Neighbouring Cell 1 LAC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13371": {
+      "platform": "ignore",
+      "description": "AVL ID 13371, Neighbouring Cell 1 ID. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13372": {
+      "name": "Neighbouring Cell 1 RSSI",
+      "description": "AVL ID 13372.",
+      "device_class": "signal_strength",
+      "unit": "dB"
+    },
+    "io13373": {
+      "platform": "ignore",
+      "description": "AVL ID 13373, Neighbouring Cell 1 MNC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13374": {
+      "platform": "ignore",
+      "description": "AVL ID 13374, Neighbouring Cell 1 MCC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13375": {
+      "platform": "ignore",
+      "description": "AVL ID 13375, Neighbouring Cell 2 LAC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13376": {
+      "platform": "ignore",
+      "description": "AVL ID 13376, Neighbouring Cell 2 ID. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13377": {
+      "name": "Neighbouring Cell 2 RSSI",
+      "description": "AVL ID 13377.",
+      "device_class": "signal_strength",
+      "unit": "dB"
+    },
+    "io13378": {
+      "platform": "ignore",
+      "description": "AVL ID 13378, Neighbouring Cell 2 MNC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13379": {
+      "platform": "ignore",
+      "description": "AVL ID 13379, Neighbouring Cell 2 MCC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13380": {
+      "platform": "ignore",
+      "description": "AVL ID 13380, Neighbouring Cell 3 LAC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13381": {
+      "platform": "ignore",
+      "description": "AVL ID 13381, Neighbouring Cell 3 ID. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13382": {
+      "name": "Neighbouring Cell 3 RSSI",
+      "description": "AVL ID 13382.",
+      "device_class": "signal_strength",
+      "unit": "dB"
+    },
+    "io13383": {
+      "platform": "ignore",
+      "description": "AVL ID 13383, Neighbouring Cell 3 MNC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13384": {
+      "platform": "ignore",
+      "description": "AVL ID 13384, Neighbouring Cell 3 MCC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13385": {
+      "platform": "ignore",
+      "description": "AVL ID 13385, Neighbouring Cell 4 LAC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13386": {
+      "platform": "ignore",
+      "description": "AVL ID 13386, Neighbouring Cell 4 ID. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13387": {
+      "name": "Neighbouring Cell 4 RSSI",
+      "description": "AVL ID 13387.",
+      "device_class": "signal_strength",
+      "unit": "dB"
+    },
+    "io13388": {
+      "platform": "ignore",
+      "description": "AVL ID 13388, Neighbouring Cell 4 MNC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13389": {
+      "platform": "ignore",
+      "description": "AVL ID 13389, Neighbouring Cell 4 MCC. Opaque or high-churn; enable with a device override if you need it."
+    },
+    "io13460": {
+      "platform": "binary_sensor",
+      "name": "Magnet 5",
+      "description": "AVL ID 13460."
+    },
+    "io13461": {
+      "platform": "binary_sensor",
+      "name": "Magnet 6",
+      "description": "AVL ID 13461."
+    },
+    "io13462": {
+      "platform": "binary_sensor",
+      "name": "Magnet 7",
+      "description": "AVL ID 13462."
+    },
+    "io13463": {
+      "platform": "binary_sensor",
+      "name": "Magnet 8",
+      "description": "AVL ID 13463."
+    },
+    "io13464": {
+      "platform": "binary_sensor",
+      "name": "Magnet 9",
+      "description": "AVL ID 13464."
+    },
+    "io13465": {
+      "platform": "binary_sensor",
+      "name": "Magnet 10",
+      "description": "AVL ID 13465."
+    },
+    "io13468": {
+      "name": "Movement Count 5",
+      "description": "AVL ID 13468."
+    },
+    "io13469": {
+      "name": "Movement Count 6",
+      "description": "AVL ID 13469."
+    },
+    "io13470": {
+      "name": "Movement Count 7",
+      "description": "AVL ID 13470."
+    },
+    "io13471": {
+      "name": "Movement Count 8",
+      "description": "AVL ID 13471."
+    },
+    "io13472": {
+      "name": "Movement Count 9",
+      "description": "AVL ID 13472."
+    },
+    "io13473": {
+      "name": "Movement Count 10",
+      "description": "AVL ID 13473."
+    },
+    "io13474": {
+      "name": "Pitch 5",
+      "description": "AVL ID 13474.",
+      "unit": "°"
+    },
+    "io13475": {
+      "name": "Pitch 6",
+      "description": "AVL ID 13475.",
+      "unit": "°"
+    },
+    "io13476": {
+      "name": "Pitch 7",
+      "description": "AVL ID 13476.",
+      "unit": "°"
+    },
+    "io13477": {
+      "name": "Pitch 8",
+      "description": "AVL ID 13477.",
+      "unit": "°"
+    },
+    "io13478": {
+      "name": "Pitch 9",
+      "description": "AVL ID 13478.",
+      "unit": "°"
+    },
+    "io13479": {
+      "name": "Pitch 10",
+      "description": "AVL ID 13479.",
+      "unit": "°"
+    },
+    "io13480": {
+      "name": "Roll 5",
+      "description": "AVL ID 13480.",
+      "unit": "°"
+    },
+    "io13481": {
+      "name": "Roll 6",
+      "description": "AVL ID 13481.",
+      "unit": "°"
+    },
+    "io13482": {
+      "name": "Roll 7",
+      "description": "AVL ID 13482.",
+      "unit": "°"
+    },
+    "io13483": {
+      "name": "Roll 8",
+      "description": "AVL ID 13483.",
+      "unit": "°"
+    },
+    "io13484": {
+      "name": "Roll 9",
+      "description": "AVL ID 13484.",
+      "unit": "°"
+    },
+    "io13485": {
+      "name": "Roll 10",
+      "description": "AVL ID 13485.",
+      "unit": "°"
+    }
+  }
+}
