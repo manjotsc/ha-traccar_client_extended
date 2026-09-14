@@ -1,0 +1,16 @@
+{
+  "mcc": "220",
+  "country": "Serbia",
+  "operators": {
+    "01": "Yettel",
+    "02": "One",
+    "03": "mt:s",
+    "04": "T-Mobile CG",
+    "05": "A1 SRB",
+    "07": "Orion",
+    "09": "Vectone Mobile",
+    "11": "Globaltel",
+    "20": "A1 SRB",
+    "21": "Infrastruktura železnice Srbije a.d."
+  }
+}

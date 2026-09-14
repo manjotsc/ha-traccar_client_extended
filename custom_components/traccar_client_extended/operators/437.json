@@ -1,0 +1,12 @@
+{
+  "mcc": "437",
+  "country": "Kyrgyzstan",
+  "operators": {
+    "01": "Beeline",
+    "03": "7 Mobile",
+    "05": "MegaCom",
+    "09": "O!",
+    "10": "Saima Telecom",
+    "11": "iTel"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "mcc": "202",
+  "country": "Greece",
+  "operators": {
+    "01": "Cosmote",
+    "02": "Cosmote",
+    "03": "OTE",
+    "04": "OSE",
+    "05": "Vodafone",
+    "06": "Cosmoline",
+    "07": "AMD Telecom",
+    "09": "NOVA",
+    "10": "NOVA",
+    "11": "interConnect",
+    "12": "Yuboto",
+    "13": "Compatel Limited",
+    "14": "Cyta Hellas",
+    "15": "BWS",
+    "16": "Inter Telecom"
+  }
+}

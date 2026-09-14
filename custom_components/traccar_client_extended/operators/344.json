@@ -1,0 +1,10 @@
+{
+  "mcc": "344",
+  "country": "Antigua and Barbuda",
+  "operators": {
+    "030": "APUA",
+    "050": "Digicel",
+    "920": "FLOW",
+    "930": "AT&T Wireless"
+  }
+}

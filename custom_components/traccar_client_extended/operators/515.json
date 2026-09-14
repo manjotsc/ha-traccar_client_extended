@@ -1,0 +1,15 @@
+{
+  "mcc": "515",
+  "country": "Philippines",
+  "operators": {
+    "01": "Islacom",
+    "02": "Globe",
+    "03": "SMART",
+    "05": "Sun Cellular",
+    "11": "PLDT via ACeS Philippines",
+    "18": "Cure",
+    "24": "ABS-CBN Mobile",
+    "66": "DITO",
+    "88": "Next Mobile Inc."
+  }
+}

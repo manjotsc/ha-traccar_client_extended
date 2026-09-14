@@ -1,0 +1,9 @@
+{
+  "mcc": "330",
+  "country": "Puerto Rico",
+  "operators": {
+    "000": "Open Mobile",
+    "110": "Claro Puerto Rico",
+    "120": "Open Mobile"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mcc": "283",
+  "country": "Armenia",
+  "operators": {
+    "01": "Beeline",
+    "04": "Karabakh Telecom",
+    "05": "VivaCell-MTS",
+    "10": "Ucom"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mcc": "714",
+  "country": "Panama",
+  "operators": {
+    "01": "Cable & Wireless",
+    "02": "Tigo",
+    "03": "Claro",
+    "04": "Digicel",
+    "05": "Cable & Wireless",
+    "020": "Tigo"
+  }
+}

@@ -1,0 +1,19 @@
+# pytest-homeassistant-custom-component pins an exact `homeassistant`, so it is
+# what decides which Home Assistant this repo is tested against. A floor rather
+# than a pin: this integration's job is to keep working as Home Assistant moves,
+# and the weekly CI cron exists to catch that drift on a schedule instead of in
+# a user's install. 0.13.364 is the first release pinning homeassistant 2026.9.1.
+#
+# Needs Python >= 3.14.2. Home Assistant 2026.3.0 raised its floor to that, so
+# an older interpreter silently resolves to a months-old Home Assistant and the
+# API you test against is not the API anyone runs.
+pytest-homeassistant-custom-component>=0.13.364
+
+pytest>=8.0
+pytest-asyncio>=0.24
+pytraccar==3.0.0
+# Pinned, unlike the rest. Ruff is a gate rather than a dependency: a new
+# release adds rules and reformats, so a floor turns CI red on a commit that
+# changed nothing, and `ruff format` disagrees with whatever the last person
+# had installed. Bump it deliberately, with the reformat in its own commit.
+ruff==0.16.6

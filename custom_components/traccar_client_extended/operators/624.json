@@ -1,0 +1,10 @@
+{
+  "mcc": "624",
+  "country": "Cameroon",
+  "operators": {
+    "01": "MTN Cameroon",
+    "02": "Orange",
+    "03": "Camtel",
+    "04": "Nexttel"
+  }
+}

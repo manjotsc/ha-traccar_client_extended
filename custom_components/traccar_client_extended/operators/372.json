@@ -1,0 +1,9 @@
+{
+  "mcc": "372",
+  "country": "Haiti",
+  "operators": {
+    "01": "Voila",
+    "02": "Digicel",
+    "03": "Natcom"
+  }
+}

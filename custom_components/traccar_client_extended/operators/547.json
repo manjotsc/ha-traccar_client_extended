@@ -1,0 +1,10 @@
+{
+  "mcc": "547",
+  "country": "French Polynesia (France)",
+  "operators": {
+    "05": "Ora",
+    "10": "Mara Telecom",
+    "15": "Vodafone",
+    "20": "Vini"
+  }
+}

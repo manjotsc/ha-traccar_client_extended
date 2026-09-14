@@ -1,0 +1,25 @@
+{
+  "mcc": "466",
+  "country": "Taiwan",
+  "operators": {
+    "01": "FarEasTone",
+    "02": "FarEasTone",
+    "03": "FarEasTone",
+    "05": "Gt",
+    "06": "FarEasTone",
+    "07": "FarEasTone",
+    "09": "VMAX",
+    "10": "G1",
+    "11": "Chunghwa LDM",
+    "12": "Ambit Microsystems",
+    "56": "FITEL",
+    "68": "Tatung InfoComm",
+    "88": "FarEasTone",
+    "89": "T Star",
+    "90": "T Star",
+    "92": "Chunghwa",
+    "93": "MobiTai",
+    "97": "Taiwan Mobile",
+    "99": "TransAsia"
+  }
+}

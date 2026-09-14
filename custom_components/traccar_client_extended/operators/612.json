@@ -1,0 +1,14 @@
+{
+  "mcc": "612",
+  "country": "Ivory Coast",
+  "operators": {
+    "01": "Cora de Comstar",
+    "02": "Moov",
+    "03": "Orange",
+    "04": "KoZ",
+    "05": "MTN",
+    "06": "GreenN",
+    "07": "café",
+    "18": "YooMee"
+  }
+}

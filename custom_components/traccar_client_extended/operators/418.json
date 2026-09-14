@@ -1,0 +1,15 @@
+{
+  "mcc": "418",
+  "country": "Iraq",
+  "operators": {
+    "00": "Asia Cell",
+    "05": "Asia Cell",
+    "08": "SanaTel",
+    "20": "Zain",
+    "30": "Zain",
+    "40": "Korek",
+    "45": "Mobitel",
+    "62": "Itisaluna",
+    "92": "Omnnea"
+  }
+}

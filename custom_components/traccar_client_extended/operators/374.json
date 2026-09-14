@@ -1,0 +1,14 @@
+{
+  "mcc": "374",
+  "country": "Trinidad and Tobago",
+  "operators": {
+    "01": "bmobile",
+    "12": "bmobile",
+    "13": "Digicel",
+    "20": "bmobile",
+    "120": "bmobile",
+    "129": "bmobile",
+    "130": "Digicel",
+    "140": "Laqtel"
+  }
+}

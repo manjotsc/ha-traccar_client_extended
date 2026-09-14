@@ -1,0 +1,12 @@
+{
+  "mcc": "603",
+  "country": "Algeria",
+  "operators": {
+    "01": "Mobilis",
+    "02": "Djezzy",
+    "03": "Ooredoo",
+    "07": "AT",
+    "09": "AT",
+    "21": "ANESRIF"
+  }
+}

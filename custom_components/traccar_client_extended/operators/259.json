@@ -1,0 +1,13 @@
+{
+  "mcc": "259",
+  "country": "Moldova",
+  "operators": {
+    "01": "Orange",
+    "02": "Moldcell",
+    "03": "Moldtelecom",
+    "04": "Eventis",
+    "05": "Moldtelecom",
+    "15": "IDC",
+    "99": "Moldtelecom"
+  }
+}

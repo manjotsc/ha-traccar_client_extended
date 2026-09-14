@@ -1,0 +1,9 @@
+{
+  "mcc": "651",
+  "country": "Lesotho",
+  "operators": {
+    "01": "Vodacom",
+    "02": "Econet Telecom",
+    "10": "Vodacom"
+  }
+}

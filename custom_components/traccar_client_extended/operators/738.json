@@ -1,0 +1,12 @@
+{
+  "mcc": "738",
+  "country": "Guyana",
+  "operators": {
+    "00": "E-Networks",
+    "01": "Digicel",
+    "002": "GT&T Cellink Plus",
+    "003": "Quark Communications Inc.",
+    "05": "eGovernment Unit, Ministry of the Presidency",
+    "040": "E-Networks"
+  }
+}

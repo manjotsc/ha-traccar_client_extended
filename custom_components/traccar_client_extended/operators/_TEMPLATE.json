@@ -1,0 +1,9 @@
+{
+  "mcc": "000",
+  "country": "Country name",
+  "operators": {
+    "01": "Network with a two-digit MNC",
+    "001": "Network with a three-digit MNC",
+    "220": "Network name, not the brand or the plan"
+  }
+}

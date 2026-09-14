@@ -1,0 +1,10 @@
+{
+  "mcc": "416",
+  "country": "Jordan",
+  "operators": {
+    "01": "zain JO",
+    "02": "XPress Telecom",
+    "03": "Umniah",
+    "77": "Orange"
+  }
+}

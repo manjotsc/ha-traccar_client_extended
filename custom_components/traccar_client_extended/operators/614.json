@@ -1,0 +1,10 @@
+{
+  "mcc": "614",
+  "country": "Niger",
+  "operators": {
+    "01": "SahelCom",
+    "02": "Airtel",
+    "03": "Moov",
+    "04": "Orange"
+  }
+}

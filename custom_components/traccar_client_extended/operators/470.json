@@ -1,0 +1,14 @@
+{
+  "mcc": "470",
+  "country": "Bangladesh",
+  "operators": {
+    "01": "Grameenphone",
+    "02": "Robi",
+    "03": "Banglalink",
+    "04": "TeleTalk",
+    "05": "Citycell",
+    "07": "Airtel",
+    "09": "ollo",
+    "10": "Banglalion"
+  }
+}

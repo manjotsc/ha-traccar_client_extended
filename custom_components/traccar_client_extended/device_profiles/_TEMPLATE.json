@@ -1,0 +1,71 @@
+{
+  "name": "vendor_model",
+  "display_name": "Vendor Model",
+  "vendor": "Vendor",
+  "description": "What this profile covers, and where the mappings came from.",
+  "protocols": ["traccar-protocol-name"],
+  "models": ["MODEL123"],
+  "attributes": {
+    "io999": {
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2,
+      "name": "External power",
+      "description": "AVL ID 999, reported in millivolts"
+    },
+    "io998": {
+      "platform": "binary_sensor",
+      "device_class": "motion",
+      "name": "Movement"
+    },
+    "io997": {
+      "platform": "ignore",
+      "description": "Changes on every report and is not useful in Home Assistant"
+    },
+    "io996": {
+      "name": "Network type",
+      "values": {
+        "0": "First mode",
+        "1": "Second mode"
+      },
+      "description": "An enumeration, not a measurement. An unlisted value keeps showing as a number."
+    },
+    "io995": {
+      "platform": "ignore",
+      "name": "Packed word",
+      "fields": {
+        "whole_byte": {
+          "byte": 0,
+          "name": "A whole byte",
+          "unit": "dBm",
+          "device_class": "signal_strength",
+          "scale": -1
+        },
+        "two_bytes": {
+          "bits": [8, 16],
+          "name": "A value spanning two bytes",
+          "signed": true,
+          "unit": "°C",
+          "device_class": "temperature",
+          "scale": 0.1
+        },
+        "one_flag": {
+          "bits": [24, 1],
+          "name": "A single flag bit",
+          "platform": "binary_sensor",
+          "device_class": "problem"
+        },
+        "a_few_bits": {
+          "bits": [25, 3],
+          "name": "A mode in three bits",
+          "values": {
+            "0": "Idle",
+            "1": "Active"
+          }
+        }
+      },
+      "description": "Several readings in one parameter. Offsets count from the least significant bit; byte 0 is bits [0, 8]. 'ignore' hides the packed word itself."
+    }
+  }
+}

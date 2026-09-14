@@ -1,0 +1,10 @@
+{
+  "mcc": "428",
+  "country": "Mongolia",
+  "operators": {
+    "88": "Unitel",
+    "91": "Skytel",
+    "98": "G-Mobile",
+    "99": "Mobicom"
+  }
+}

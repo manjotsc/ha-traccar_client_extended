@@ -1,0 +1,13 @@
+{
+  "mcc": "604",
+  "country": "Morocco",
+  "operators": {
+    "00": "Orange Morocco",
+    "01": "IAM",
+    "02": "INWI",
+    "04": "Al Houria Telecom",
+    "05": "INWI",
+    "06": "IAM",
+    "99": "Al Houria Telecom"
+  }
+}

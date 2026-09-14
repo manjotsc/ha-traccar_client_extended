@@ -1,0 +1,10 @@
+{
+  "mcc": "528",
+  "country": "Brunei",
+  "operators": {
+    "01": "TelBru",
+    "02": "PCSB",
+    "03": "UNN",
+    "11": "DST"
+  }
+}

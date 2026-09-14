@@ -1,0 +1,13 @@
+{
+  "mcc": "630",
+  "country": "Democratic Republic of the Congo",
+  "operators": {
+    "01": "Vodacom",
+    "02": "Airtel",
+    "05": "Supercell",
+    "86": "Orange RDC",
+    "88": "YTT",
+    "89": "Orange RDC",
+    "90": "Africell"
+  }
+}

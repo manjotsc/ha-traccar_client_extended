@@ -1,0 +1,15 @@
+{
+  "mcc": "434",
+  "country": "Uzbekistan",
+  "operators": {
+    "01": "Buztel",
+    "02": "Uzmacom",
+    "03": "UzMobile",
+    "04": "Beeline",
+    "05": "Ucell",
+    "06": "Perfectum Mobile",
+    "07": "Mobiuz",
+    "08": "UzMobile",
+    "09": "EVO"
+  }
+}

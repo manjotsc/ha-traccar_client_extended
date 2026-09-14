@@ -1,0 +1,11 @@
+{
+  "mcc": "706",
+  "country": "El Salvador",
+  "operators": {
+    "01": "Claro",
+    "02": "Digicel",
+    "03": "Tigo",
+    "04": "Movistar",
+    "05": "RED"
+  }
+}

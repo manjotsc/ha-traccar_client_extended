@@ -1,0 +1,18 @@
+{
+  "mcc": "637",
+  "country": "Somalia",
+  "operators": {
+    "01": "Telesom",
+    "04": "Somafone",
+    "10": "Nationlink",
+    "20": "SOMNET",
+    "30": "Golis",
+    "50": "Hormuud",
+    "57": "UNITEL",
+    "60": "Nationlink",
+    "67": "Horntel Group",
+    "70": "Onkod Telecom Ltd.",
+    "71": "Somtel",
+    "82": "Telcom"
+  }
+}

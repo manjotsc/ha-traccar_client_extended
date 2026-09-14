@@ -1,0 +1,27 @@
+{
+  "mcc": "314",
+  "country": "United States of America",
+  "operators": {
+    "010": "Boingo Wireless Inc.",
+    "020": "Spectrum Wireless Holdings, LLC",
+    "030": "Baicells Technologies North America Inc.",
+    "060": "Texas A&M University",
+    "070": "Texas A&M University",
+    "080": "Texas A&M University",
+    "090": "Southern LINC",
+    "200": "XF Wireless Investments, LLC",
+    "210": "Telecom Resource Center",
+    "220": "Securus Technologies",
+    "230": "Trace-Tek LLC",
+    "240": "XF Wireless Investments, LLC",
+    "260": "AT&T Mobility",
+    "270": "AT&T Mobility",
+    "280": "AT&T Mobility",
+    "290": "Wave",
+    "300": "Southern California Edison",
+    "310": "Terranet",
+    "320": "Agri-Valley Communications, Inc",
+    "330": "FreedomFi",
+    "340": "e/marconi"
+  }
+}

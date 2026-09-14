@@ -1,0 +1,11 @@
+{
+  "mcc": "342",
+  "country": "Barbados",
+  "operators": {
+    "600": "FLOW",
+    "646": "KW Telecommunications Inc.",
+    "750": "Digicel",
+    "800": "Ozone",
+    "820": "Neptune Communications Inc."
+  }
+}

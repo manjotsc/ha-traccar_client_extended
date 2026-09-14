@@ -1,0 +1,10 @@
+{
+  "mcc": "746",
+  "country": "Suriname",
+  "operators": {
+    "02": "Telesur",
+    "03": "Digicel",
+    "04": "Digicel",
+    "05": "Telesur"
+  }
+}

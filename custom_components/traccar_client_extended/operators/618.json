@@ -1,0 +1,11 @@
+{
+  "mcc": "618",
+  "country": "Liberia",
+  "operators": {
+    "01": "Lonestar Cell MTN",
+    "02": "Libercell",
+    "04": "Novafone",
+    "07": "Orange LBR",
+    "20": "LIBTELCO"
+  }
+}

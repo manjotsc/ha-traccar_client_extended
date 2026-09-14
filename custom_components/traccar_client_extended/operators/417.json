@@ -1,0 +1,10 @@
+{
+  "mcc": "417",
+  "country": "Syria",
+  "operators": {
+    "01": "Syriatel",
+    "02": "MTN",
+    "03": "Wafa Telecom",
+    "09": "Syrian Telecom"
+  }
+}

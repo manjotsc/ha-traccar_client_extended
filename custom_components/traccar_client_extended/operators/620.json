@@ -1,0 +1,23 @@
+{
+  "mcc": "620",
+  "country": "Ghana",
+  "operators": {
+    "01": "MTN",
+    "02": "Vodafone",
+    "03": "AirtelTigo",
+    "04": "Expresso",
+    "05": "National Security",
+    "06": "AirtelTigo",
+    "07": "Globacom",
+    "08": "Surfline",
+    "09": "NITA",
+    "10": "Blu",
+    "11": "Netafrique Dot Com Ltd",
+    "12": "BTL",
+    "13": "Goldkey",
+    "14": "busy",
+    "15": "Lebara",
+    "16": "Telesol",
+    "17": "iBurst Africa"
+  }
+}

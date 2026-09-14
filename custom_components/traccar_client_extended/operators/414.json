@@ -1,0 +1,18 @@
+{
+  "mcc": "414",
+  "country": "Myanmar",
+  "operators": {
+    "00": "MPT",
+    "01": "MPT",
+    "02": "MPT",
+    "03": "CDMA800",
+    "04": "MPT",
+    "05": "Ooredoo",
+    "06": "Telenor",
+    "09": "Mytel",
+    "20": "ACS",
+    "21": "ACS",
+    "22": "Fortune Telecom Co., Ltd",
+    "23": "Global Technology Co., Ltd"
+  }
+}

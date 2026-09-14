@@ -1,0 +1,11 @@
+{
+  "mcc": "659",
+  "country": "South Sudan",
+  "operators": {
+    "02": "MTN",
+    "03": "Gemtel",
+    "04": "Vivacell",
+    "06": "Zain",
+    "07": "Sudani"
+  }
+}

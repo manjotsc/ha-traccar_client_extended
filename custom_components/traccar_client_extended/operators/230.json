@@ -1,0 +1,18 @@
+{
+  "mcc": "230",
+  "country": "Czech Republic",
+  "operators": {
+    "01": "T-Mobile",
+    "02": "O2",
+    "03": "Vodafone",
+    "04": "Nordic Telecom Regional s.r.o.",
+    "05": "PODA a.s.",
+    "06": "Nordic Telecom 5G a.s.",
+    "07": "T-Mobile",
+    "08": "Compatel s.r.o.",
+    "09": "Unimobile",
+    "11": "incrate s.r.o.",
+    "98": "Správa železniční dopravní cesty, s.o.",
+    "99": "Vodafone"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "mcc": "272",
+  "country": "Ireland",
+  "operators": {
+    "01": "Vodafone",
+    "02": "3",
+    "03": "Eir",
+    "04": "Access Telecom",
+    "05": "3",
+    "07": "Eir",
+    "08": "Eir",
+    "09": "Clever Communications Ltd.",
+    "11": "Tesco Mobile",
+    "13": "Lycamobile",
+    "15": "Virgin Mobile",
+    "16": "Carphone Warehouse",
+    "17": "3",
+    "18": "Cubic Telecom Limited",
+    "21": "Net Feasa Limited",
+    "68": "Office of the Government Chief Information Officer"
+  }
+}

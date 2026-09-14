@@ -1,0 +1,12 @@
+{
+  "mcc": "421",
+  "country": "Yemen",
+  "operators": {
+    "01": "SabaFon",
+    "02": "YOU",
+    "03": "Yemen Mobile",
+    "04": "Y",
+    "10": "Yemen-4G",
+    "11": "Yemen Mobile"
+  }
+}

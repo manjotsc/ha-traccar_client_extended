@@ -1,0 +1,12 @@
+{
+  "mcc": "280",
+  "country": "Cyprus",
+  "operators": {
+    "01": "Cytamobile-Vodafone",
+    "02": "Cytamobile-Vodafone",
+    "10": "Epic",
+    "20": "PrimeTel",
+    "22": "lemontel",
+    "23": "Vectone Mobile"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "mcc": "350",
+  "country": "Bermuda",
+  "operators": {
+    "00": "One",
+    "01": "Digicel Bermuda",
+    "02": "Mobility",
+    "05": "Telecom Networks",
+    "007": "Paradise Mobile",
+    "11": "Deltronics",
+    "15": "FKB Net Ltd."
+  }
+}

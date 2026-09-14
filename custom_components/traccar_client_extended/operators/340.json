@@ -1,0 +1,16 @@
+{
+  "mcc": "340",
+  "country": "French Antilles (France)",
+  "operators": {
+    "01": "Orange",
+    "02": "SFR Caraïbe",
+    "03": "FLOW",
+    "04": "Free",
+    "08": "Dauphin",
+    "09": "Free",
+    "10": "Guadeloupe Téléphone Mobile",
+    "11": "Guyane Téléphone Mobile",
+    "12": "Martinique Téléphone Mobile",
+    "20": "Digicel"
+  }
+}

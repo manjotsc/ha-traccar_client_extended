@@ -1,0 +1,20 @@
+{
+  "mcc": "274",
+  "country": "Iceland",
+  "operators": {
+    "01": "Síminn",
+    "02": "Vodafone",
+    "03": "Vodafone",
+    "04": "Viking",
+    "05": "Halló Frjáls fjarskipti hf.",
+    "06": "Núll níu ehf",
+    "07": "IceCell",
+    "08": "On-waves",
+    "11": "Nova",
+    "12": "Tal",
+    "16": "Tismi BV",
+    "22": "Landhelgisgæslan (Icelandic Coast Guard)",
+    "31": "Síminn",
+    "91": "Neyðarlínan"
+  }
+}

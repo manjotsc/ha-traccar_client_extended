@@ -1,0 +1,10 @@
+{
+  "mcc": "645",
+  "country": "Zambia",
+  "operators": {
+    "01": "Airtel",
+    "02": "MTN",
+    "03": "ZAMTEL",
+    "07": "Liquid Telecom Zambia Limited"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "mcc": "255",
+  "country": "Ukraine",
+  "operators": {
+    "00": "IDC",
+    "01": "Vodafone",
+    "02": "Kyivstar",
+    "03": "Kyivstar",
+    "04": "Intertelecom",
+    "05": "Kyivstar",
+    "06": "lifecell",
+    "07": "3Mob; Lycamobile",
+    "08": "JSC Ukrtelecom",
+    "09": "PRJSC \"Farlep-Invest\"",
+    "10": "Atlantis Telecom LLC",
+    "21": "PEOPLEnet",
+    "23": "CDMA Ukraine",
+    "25": "NEWTONE",
+    "98": "MKS (ex. Lugacom)",
+    "99": "Phoenix; MKS (ex. Lugacom)",
+    "701": "Ukrainian Special Systems"
+  }
+}

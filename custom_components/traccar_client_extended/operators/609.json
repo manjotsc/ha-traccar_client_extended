@@ -1,0 +1,9 @@
+{
+  "mcc": "609",
+  "country": "Mauritania",
+  "operators": {
+    "01": "Mattel",
+    "02": "Chinguitel",
+    "10": "Moov"
+  }
+}

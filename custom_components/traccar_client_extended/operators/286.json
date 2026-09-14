@@ -1,0 +1,10 @@
+{
+  "mcc": "286",
+  "country": "Turkey",
+  "operators": {
+    "01": "Turkcell",
+    "02": "Vodafone",
+    "03": "Türk Telekom",
+    "04": "Aycell"
+  }
+}

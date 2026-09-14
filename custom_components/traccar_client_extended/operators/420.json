@@ -1,0 +1,12 @@
+{
+  "mcc": "420",
+  "country": "Saudi Arabia",
+  "operators": {
+    "01": "Al Jawal (STC )",
+    "03": "Mobily",
+    "04": "Zain SA",
+    "05": "Virgin Mobile",
+    "06": "Lebara Mobile",
+    "21": "RGSM"
+  }
+}

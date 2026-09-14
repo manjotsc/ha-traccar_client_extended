@@ -1,0 +1,13 @@
+{
+  "mcc": "412",
+  "country": "Afghanistan",
+  "operators": {
+    "01": "AWCC",
+    "20": "Roshan",
+    "40": "MTN",
+    "50": "Etisalat",
+    "55": "WASEL",
+    "80": "Salaam",
+    "88": "Salaam"
+  }
+}

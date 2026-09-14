@@ -1,0 +1,21 @@
+{
+  "mcc": "520",
+  "country": "Thailand",
+  "operators": {
+    "00": "TrueMove H / my by NT",
+    "01": "AIS",
+    "02": "NT Mobile",
+    "03": "AIS",
+    "04": "TrueMove H",
+    "05": "dtac",
+    "09": "Royal Thai Police",
+    "15": "AIS-T / NT Mobile",
+    "17": "NT Mobile",
+    "18": "dtac",
+    "20": "ACeS",
+    "23": "AIS GSM 1800",
+    "25": "WE PCT",
+    "47": "dtac-T",
+    "99": "TrueMove"
+  }
+}

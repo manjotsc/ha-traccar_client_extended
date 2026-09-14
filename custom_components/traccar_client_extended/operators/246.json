@@ -1,0 +1,21 @@
+{
+  "mcc": "246",
+  "country": "Lithuania",
+  "operators": {
+    "01": "Telia",
+    "02": "BITĖ",
+    "03": "Tele2",
+    "04": "LR vidaus reikalų ministerija (Ministry of the Interior)",
+    "05": "LitRail",
+    "06": "Mediafon",
+    "07": "Compatel Ltd.",
+    "08": "MEZON",
+    "09": "Interactive Digital Media GmbH",
+    "11": "DATASIM OU",
+    "12": "Nord connect OU",
+    "13": "Travel Communication SIA",
+    "14": "Tismi BV",
+    "15": "Esim telecom, UAB",
+    "16": "Annecto Telecom Limited"
+  }
+}

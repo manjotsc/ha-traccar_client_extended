@@ -1,0 +1,17 @@
+{
+  "mcc": "525",
+  "country": "Singapore",
+  "operators": {
+    "01": "SingTel",
+    "02": "SingTel-G18",
+    "03": "M1",
+    "05": "StarHub",
+    "06": "StarHub",
+    "07": "SingTel",
+    "08": "StarHub",
+    "09": "Circles.Life",
+    "10": "SIMBA",
+    "11": "M1",
+    "12": "Grid"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mcc": "422",
+  "country": "Oman",
+  "operators": {
+    "02": "Omantel",
+    "03": "Ooredoo",
+    "04": "Omantel",
+    "06": "Vodafone"
+  }
+}

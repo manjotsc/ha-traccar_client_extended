@@ -1,0 +1,12 @@
+{
+  "mcc": "400",
+  "country": "Azerbaijan",
+  "operators": {
+    "01": "Azercell",
+    "02": "Bakcell",
+    "03": "FONEX",
+    "04": "Nar Mobile",
+    "05": "Special State Protection Service of the Republic of Azerbaijan",
+    "06": "Naxtel"
+  }
+}

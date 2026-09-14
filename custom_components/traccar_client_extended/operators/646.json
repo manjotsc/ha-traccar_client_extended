@@ -1,0 +1,11 @@
+{
+  "mcc": "646",
+  "country": "Madagascar",
+  "operators": {
+    "01": "Airtel",
+    "02": "Orange",
+    "03": "Sacel",
+    "04": "Telma",
+    "05": "BIP / blueline"
+  }
+}

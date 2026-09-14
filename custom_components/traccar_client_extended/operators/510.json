@@ -1,0 +1,22 @@
+{
+  "mcc": "510",
+  "country": "Indonesia",
+  "operators": {
+    "00": "PSN",
+    "01": "Indosat Ooredoo Hutchison",
+    "03": "StarOne",
+    "07": "TelkomFlexi",
+    "08": "AXIS",
+    "09": "Smartfren",
+    "10": "Telkomsel",
+    "11": "XL",
+    "20": "TELKOMMobile",
+    "21": "Indosat Ooredoo Hutchison",
+    "27": "Net 1",
+    "28": "Fren/Hepi",
+    "78": "Hinet",
+    "88": "BOLT! 4G LTE",
+    "89": "3",
+    "99": "Esia"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mcc": "542",
+  "country": "Fiji",
+  "operators": {
+    "01": "Vodafone",
+    "02": "Digicel",
+    "03": "TFL"
+  }
+}

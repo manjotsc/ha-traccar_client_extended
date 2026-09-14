@@ -1,0 +1,10 @@
+{
+  "mcc": "622",
+  "country": "Chad",
+  "operators": {
+    "01": "Airtel",
+    "02": "Tawali",
+    "03": "Tigo",
+    "07": "Salam"
+  }
+}

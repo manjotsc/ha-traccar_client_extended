@@ -1,0 +1,9 @@
+{
+  "mcc": "610",
+  "country": "Mali",
+  "operators": {
+    "01": "Malitel",
+    "02": "Orange",
+    "03": "Telecel"
+  }
+}

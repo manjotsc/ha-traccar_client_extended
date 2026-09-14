@@ -1,0 +1,11 @@
+{
+  "mcc": "606",
+  "country": "Libya",
+  "operators": {
+    "00": "Libyana",
+    "01": "Madar",
+    "02": "Al-Jeel Phone",
+    "03": "Libya Phone",
+    "06": "Hatef Libya"
+  }
+}

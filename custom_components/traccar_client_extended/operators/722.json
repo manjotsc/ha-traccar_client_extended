@@ -1,0 +1,16 @@
+{
+  "mcc": "722",
+  "country": "Argentina",
+  "operators": {
+    "010": "Movistar",
+    "020": "Nextel",
+    "034": "Personal",
+    "040": "Globalstar",
+    "070": "Movistar",
+    "310": "Claro",
+    "320": "Claro",
+    "330": "Claro",
+    "341": "Personal",
+    "350": "PORT-HABLE"
+  }
+}

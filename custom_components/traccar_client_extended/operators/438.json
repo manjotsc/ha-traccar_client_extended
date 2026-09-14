@@ -1,0 +1,9 @@
+{
+  "mcc": "438",
+  "country": "Turkmenistan",
+  "operators": {
+    "01": "MTS",
+    "02": "TM-Cell",
+    "03": "AGTS CDMA"
+  }
+}

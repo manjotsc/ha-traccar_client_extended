@@ -1,0 +1,18 @@
+{
+  "mcc": "270",
+  "country": "Luxembourg",
+  "operators": {
+    "01": "POST",
+    "02": "MTX Connect S.a.r.l.",
+    "05": "Luxembourg Online S.A.",
+    "07": "Bouygues Telecom S.A.",
+    "10": "Blue Communications",
+    "71": "CFL",
+    "77": "Tango",
+    "78": "Interactive digital media GmbH",
+    "79": "Mitto AG",
+    "80": "Syniverse Technologies S.à r.l.",
+    "81": "E-Lux Mobile Telecommunication S.A.",
+    "99": "Orange"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "mcc": "441",
+  "country": "Japan",
+  "operators": {
+    "00": "Wireless City Planning Inc.",
+    "01": "SoftBank",
+    "10": "UQ WiMAX",
+    "91": "Tokyo Organising Committee of the Olympic and Paralympic Games",
+    "200": "Soracom Inc.",
+    "201": "Aurens Co., Ltd.",
+    "202": "Sony Wireless Communications Inc.",
+    "203": "Gujo City",
+    "204": "Wicom Inc.",
+    "205": "Katch Network Inc.",
+    "206": "Mitsubishi Electric Corp.",
+    "207": "Mitsui Knowledge Industry Co., Ltd.",
+    "208": "Chudenko Corp.",
+    "209": "Cable Television Toyama Inc.",
+    "210": "Nippon Telegraph and Telephone East Corp.",
+    "211": "Starcat Cable Network Co., Ltd.",
+    "212": "I-TEC Solutions Co., Ltd."
+  }
+}

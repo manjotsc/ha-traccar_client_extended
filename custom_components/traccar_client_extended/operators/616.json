@@ -1,0 +1,11 @@
+{
+  "mcc": "616",
+  "country": "Benin",
+  "operators": {
+    "01": "Benin Telecoms Mobile",
+    "02": "Moov",
+    "03": "MTN",
+    "04": "BBCOM",
+    "05": "Glo"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mcc": "278",
+  "country": "Malta",
+  "operators": {
+    "01": "Epic",
+    "11": "YOM Ltd.",
+    "21": "GO",
+    "30": "GO",
+    "77": "Melita"
+  }
+}

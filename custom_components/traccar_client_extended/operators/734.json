@@ -1,0 +1,11 @@
+{
+  "mcc": "734",
+  "country": "Venezuela",
+  "operators": {
+    "01": "Digitel",
+    "02": "Digitel GSM",
+    "03": "DirecTV",
+    "04": "Movistar",
+    "06": "Movilnet"
+  }
+}

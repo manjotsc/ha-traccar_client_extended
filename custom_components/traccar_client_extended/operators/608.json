@@ -1,0 +1,10 @@
+{
+  "mcc": "608",
+  "country": "Senegal",
+  "operators": {
+    "01": "Orange",
+    "02": "Free",
+    "03": "Expresso",
+    "04": "CSU-SA"
+  }
+}

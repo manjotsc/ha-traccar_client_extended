@@ -1,0 +1,9 @@
+{
+  "mcc": "218",
+  "country": "Bosnia and Herzegovina",
+  "operators": {
+    "03": "HT-ERONET",
+    "05": "m:tel",
+    "90": "BH Mobile"
+  }
+}

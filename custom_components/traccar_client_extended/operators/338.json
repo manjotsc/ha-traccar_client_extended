@@ -1,0 +1,14 @@
+{
+  "mcc": "338",
+  "country": "Jamaica",
+  "operators": {
+    "05": "Digicel",
+    "020": "FLOW",
+    "040": "Caricel",
+    "050": "Digicel Bermuda",
+    "070": "Claro",
+    "080": "Rock Mobile Limited",
+    "110": "FLOW",
+    "180": "FLOW"
+  }
+}

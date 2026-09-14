@@ -1,0 +1,13 @@
+{
+  "mcc": "649",
+  "country": "Namibia",
+  "operators": {
+    "01": "MTC",
+    "02": "switch",
+    "03": "TN Mobile",
+    "04": "Paratus Telecommunications (Pty)",
+    "05": "Demshi Investments CC",
+    "06": "MTN Namibia",
+    "07": "Capricorn Connect"
+  }
+}

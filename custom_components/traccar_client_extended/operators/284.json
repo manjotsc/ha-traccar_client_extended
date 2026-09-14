@@ -1,0 +1,13 @@
+{
+  "mcc": "284",
+  "country": "Bulgaria",
+  "operators": {
+    "01": "A1 BG",
+    "03": "Vivacom",
+    "05": "Yettel",
+    "07": "НКЖИ",
+    "09": "COMPATEL LIMITED",
+    "11": "Bulsatcom",
+    "13": "Ти.ком"
+  }
+}

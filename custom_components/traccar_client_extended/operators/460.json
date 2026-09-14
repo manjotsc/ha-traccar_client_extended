@@ -1,0 +1,19 @@
+{
+  "mcc": "460",
+  "country": "China",
+  "operators": {
+    "00": "China Mobile",
+    "01": "China Unicom",
+    "02": "China Mobile",
+    "03": "China Telecom",
+    "04": "China Mobile",
+    "05": "China Telecom",
+    "06": "China Unicom",
+    "07": "China Mobile",
+    "08": "China Mobile",
+    "09": "China Unicom",
+    "11": "China Telecom",
+    "15": "China Broadnet",
+    "20": "China Tietong"
+  }
+}

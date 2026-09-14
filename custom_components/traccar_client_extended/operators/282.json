@@ -1,0 +1,22 @@
+{
+  "mcc": "282",
+  "country": "Georgia",
+  "operators": {
+    "01": "Geocell",
+    "02": "Magti",
+    "03": "MagtiFix",
+    "04": "Beeline",
+    "05": "S1",
+    "06": "JSC Compatel",
+    "07": "GlobalCell",
+    "08": "Silk LTE",
+    "09": "Gmobile",
+    "10": "Premium Net International SRL",
+    "11": "Mobilive",
+    "12": "Telecom1 Ltd",
+    "13": "Asanet Ltd",
+    "14": "DataCell",
+    "15": "Servicebox Ltd",
+    "22": "Myphone"
+  }
+}

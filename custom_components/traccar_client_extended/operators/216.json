@@ -1,0 +1,15 @@
+{
+  "mcc": "216",
+  "country": "Hungary",
+  "operators": {
+    "01": "Yettel Hungary",
+    "02": "MVM Net Ltd.",
+    "03": "DIGI",
+    "04": "Invitech ICT Services Ltd.",
+    "20": "Yettel Hungary",
+    "30": "Telekom",
+    "70": "Vodafone",
+    "71": "upc",
+    "99": "MAV GSM-R"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "mcc": "502",
+  "country": "Malaysia",
+  "operators": {
+    "01": "ATUR 450",
+    "10": "Celcom, DiGi, Maxis, Tune Talk, U Mobile, Unifi, XOX, Yes",
+    "11": "TM Homeline",
+    "12": "Maxis",
+    "13": "Celcom",
+    "14": "Telekom Malaysia Berhad for PSTN SMS",
+    "16": "DiGi",
+    "17": "Maxis",
+    "18": "U Mobile",
+    "19": "Celcom",
+    "20": "Electcoms",
+    "150": "Tune Talk",
+    "151": "SalamFone",
+    "152": "Yes",
+    "153": "unifi",
+    "154": "Tron",
+    "155": "Clixster",
+    "156": "Altel",
+    "157": "Telin"
+  }
+}

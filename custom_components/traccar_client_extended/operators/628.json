@@ -1,0 +1,11 @@
+{
+  "mcc": "628",
+  "country": "Gabon",
+  "operators": {
+    "01": "Libertis",
+    "02": "Moov",
+    "03": "Airtel",
+    "04": "Azur",
+    "05": "RAG"
+  }
+}

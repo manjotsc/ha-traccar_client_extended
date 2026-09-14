@@ -1,0 +1,10 @@
+{
+  "mcc": "427",
+  "country": "Qatar",
+  "operators": {
+    "01": "Ooredoo",
+    "02": "Vodafone",
+    "05": "Ministry of Interior",
+    "06": "Ministry of Interior"
+  }
+}

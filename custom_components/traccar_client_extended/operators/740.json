@@ -1,0 +1,10 @@
+{
+  "mcc": "740",
+  "country": "Ecuador",
+  "operators": {
+    "00": "Movistar",
+    "01": "Claro",
+    "02": "CNT Mobile",
+    "03": "Tuenti"
+  }
+}

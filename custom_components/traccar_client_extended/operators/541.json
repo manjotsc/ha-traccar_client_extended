@@ -1,0 +1,10 @@
+{
+  "mcc": "541",
+  "country": "Vanuatu",
+  "operators": {
+    "00": "AIL",
+    "01": "SMILE",
+    "05": "Digicel",
+    "07": "WanTok"
+  }
+}

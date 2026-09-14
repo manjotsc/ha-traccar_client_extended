@@ -1,0 +1,16 @@
+{
+  "mcc": "450",
+  "country": "South Korea",
+  "operators": {
+    "01": "Globalstar Asia Pacific",
+    "02": "KT",
+    "03": "Power 017",
+    "04": "KT",
+    "05": "SKTelecom",
+    "06": "LG U+",
+    "07": "KT",
+    "08": "olleh",
+    "11": "Tplus",
+    "12": "SKTelecom"
+  }
+}

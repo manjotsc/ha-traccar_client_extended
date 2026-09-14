@@ -1,0 +1,9 @@
+{
+  "mcc": "648",
+  "country": "Zimbabwe",
+  "operators": {
+    "01": "Net*One",
+    "03": "Telecel",
+    "04": "Econet"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "mcc": "413",
+  "country": "Sri Lanka",
+  "operators": {
+    "01": "SLTMobitel",
+    "02": "Dialog",
+    "03": "Hutch",
+    "04": "Lanka Bell",
+    "05": "Airtel",
+    "08": "Hutch",
+    "09": "Hutch",
+    "11": "Dialog",
+    "12": "SLTMobitel"
+  }
+}

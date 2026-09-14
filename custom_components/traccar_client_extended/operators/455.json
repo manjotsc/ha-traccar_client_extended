@@ -1,0 +1,14 @@
+{
+  "mcc": "455",
+  "country": "Macau (People's Republic of China)",
+  "operators": {
+    "00": "SmarTone",
+    "01": "CTM",
+    "02": "China Telecom",
+    "03": "3",
+    "04": "CTM",
+    "05": "3",
+    "06": "SmarTone",
+    "07": "China Telecom"
+  }
+}

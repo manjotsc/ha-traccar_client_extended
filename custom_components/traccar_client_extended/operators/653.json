@@ -1,0 +1,9 @@
+{
+  "mcc": "653",
+  "country": "Eswatini",
+  "operators": {
+    "01": "SPTC",
+    "02": "Eswatini Mobile Limited",
+    "10": "MTN Eswatini"
+  }
+}

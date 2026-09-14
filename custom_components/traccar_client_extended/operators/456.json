@@ -1,0 +1,16 @@
+{
+  "mcc": "456",
+  "country": "Cambodia",
+  "operators": {
+    "01": "Cellcard",
+    "02": "Smart",
+    "03": "qb",
+    "04": "qb",
+    "05": "Smart",
+    "06": "Smart",
+    "08": "Metfone",
+    "09": "Metfone",
+    "11": "SEATEL",
+    "18": "Cellcard"
+  }
+}

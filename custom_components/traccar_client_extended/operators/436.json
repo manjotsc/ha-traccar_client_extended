@@ -1,0 +1,13 @@
+{
+  "mcc": "436",
+  "country": "Tajikistan",
+  "operators": {
+    "01": "Tcell",
+    "02": "Tcell",
+    "03": "MegaFon",
+    "04": "Babilon-M",
+    "05": "ZET-Mobile",
+    "10": "Babilon-T",
+    "12": "Tcell"
+  }
+}

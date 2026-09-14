@@ -1,0 +1,17 @@
+{
+  "mcc": "621",
+  "country": "Nigeria",
+  "operators": {
+    "00": "Capcom",
+    "20": "Airtel",
+    "22": "InterC",
+    "24": "Spectranet",
+    "25": "Visafone",
+    "26": "Swift",
+    "27": "Smile",
+    "30": "MTN",
+    "40": "Ntel",
+    "50": "Glo",
+    "60": "9mobile"
+  }
+}

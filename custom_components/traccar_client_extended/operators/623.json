@@ -1,0 +1,10 @@
+{
+  "mcc": "623",
+  "country": "Central African Republic",
+  "operators": {
+    "01": "Moov",
+    "02": "TC",
+    "03": "Orange",
+    "04": "Azur"
+  }
+}

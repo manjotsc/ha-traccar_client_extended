@@ -1,0 +1,9 @@
+{
+  "mcc": "631",
+  "country": "Angola",
+  "operators": {
+    "02": "UNITEL",
+    "04": "MOVICEL",
+    "05": "Africell"
+  }
+}

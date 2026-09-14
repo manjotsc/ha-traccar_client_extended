@@ -1,0 +1,12 @@
+{
+  "mcc": "642",
+  "country": "Burundi",
+  "operators": {
+    "01": "econet Leo",
+    "02": "Tempo",
+    "03": "Onatel",
+    "07": "Smart Mobile",
+    "08": "Lumitel",
+    "82": "econet Leo"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "mcc": "362",
+  "country": "Former Netherlands Antilles (Kingdom of the Netherlands)",
+  "operators": {
+    "31": "Eutel N.V.",
+    "33": "WICC N.V.",
+    "51": "Telcell",
+    "54": "ECC",
+    "59": "FLOW",
+    "60": "FLOW",
+    "63": "CSC N.V.",
+    "68": "Digicel",
+    "69": "Digicel",
+    "74": "PCS N.V.",
+    "76": "Digicel",
+    "78": "Telbo",
+    "91": "FLOW",
+    "94": "Bayòs",
+    "95": "MIO"
+  }
+}

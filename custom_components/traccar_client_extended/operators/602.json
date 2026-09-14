@@ -1,0 +1,10 @@
+{
+  "mcc": "602",
+  "country": "Egypt",
+  "operators": {
+    "01": "Orange",
+    "02": "Vodafone",
+    "03": "Etisalat",
+    "04": "WE"
+  }
+}

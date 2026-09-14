@@ -1,0 +1,10 @@
+{
+  "mcc": "650",
+  "country": "Malawi",
+  "operators": {
+    "01": "TNM",
+    "02": "Access",
+    "03": "MTL",
+    "10": "Airtel"
+  }
+}

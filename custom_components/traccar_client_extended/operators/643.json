@@ -1,0 +1,9 @@
+{
+  "mcc": "643",
+  "country": "Mozambique",
+  "operators": {
+    "01": "mCel",
+    "03": "Movitel",
+    "04": "Vodacom"
+  }
+}

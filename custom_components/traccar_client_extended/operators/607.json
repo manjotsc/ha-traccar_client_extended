@@ -1,0 +1,12 @@
+{
+  "mcc": "607",
+  "country": "Gambia",
+  "operators": {
+    "01": "Gamcel",
+    "02": "Africell",
+    "03": "Comium",
+    "04": "QCell",
+    "05": "Gamtel-Ecowan",
+    "06": "NETPAGE"
+  }
+}

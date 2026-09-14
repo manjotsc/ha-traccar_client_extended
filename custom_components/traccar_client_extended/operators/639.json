@@ -1,0 +1,20 @@
+{
+  "mcc": "639",
+  "country": "Kenya",
+  "operators": {
+    "01": "Safaricom",
+    "02": "Safaricom",
+    "03": "Airtel",
+    "04": "Mobile Pay Kenya Limited",
+    "05": "Airtel",
+    "06": "Finserve Africa Limited",
+    "07": "Telkom",
+    "08": "Wetribe Ltd",
+    "09": "Homeland Media Group Limited",
+    "10": "Faiba 4G",
+    "11": "Jambo Telcoms Limited",
+    "12": "Infura Limited",
+    "13": "Hidiga Investments Ltd",
+    "14": "NRG Media Limited"
+  }
+}

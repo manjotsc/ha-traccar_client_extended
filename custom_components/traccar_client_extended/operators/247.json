@@ -1,0 +1,16 @@
+{
+  "mcc": "247",
+  "country": "Latvia",
+  "operators": {
+    "01": "LMT",
+    "02": "Tele2",
+    "03": "TRIATEL",
+    "04": "Beta Telecom",
+    "05": "Bite",
+    "06": "SIA \"UNISTARS\"",
+    "07": "SIA \"MEGATEL\"",
+    "08": "VMT",
+    "09": "Xomobile",
+    "10": "LMT"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mcc": "552",
+  "country": "Palau",
+  "operators": {
+    "01": "PNCC",
+    "02": "PT Waves",
+    "80": "Palau Mobile",
+    "99": "PMCI"
+  }
+}

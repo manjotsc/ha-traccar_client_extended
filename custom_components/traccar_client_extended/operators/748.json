@@ -1,0 +1,12 @@
+{
+  "mcc": "748",
+  "country": "Uruguay",
+  "operators": {
+    "00": "Antel",
+    "01": "Antel",
+    "03": "Antel",
+    "07": "Movistar",
+    "10": "Claro",
+    "15": "ENALUR S.A."
+  }
+}

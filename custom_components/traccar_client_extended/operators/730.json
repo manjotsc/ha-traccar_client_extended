@@ -1,0 +1,31 @@
+{
+  "mcc": "730",
+  "country": "Chile",
+  "operators": {
+    "01": "entel",
+    "02": "Movistar",
+    "03": "CLARO CL",
+    "04": "WOM",
+    "05": "Multikom S.A.",
+    "06": "Telsur",
+    "07": "Movistar",
+    "08": "VTR Móvil",
+    "09": "WOM",
+    "10": "entel",
+    "11": "Celupago S.A.",
+    "12": "Colo-Colo MóvilWanderers Móvil",
+    "13": "Virgin Mobile",
+    "14": "Netline Telefónica Móvil Ltda",
+    "15": "Cibeles Telecom S.A.",
+    "16": "Nomade Telecomunicaciones S.A.",
+    "17": "COMPATEL Chile Limitada",
+    "18": "Empresas Bunker S.A.",
+    "19": "móvil Falabella",
+    "20": "Inversiones Santa Fe Limitada",
+    "22": "Cellplus SpA",
+    "23": "Claro Servicios Empresariales S. A.",
+    "26": "WILL S.A.",
+    "27": "Cibeles Telecom S.A.",
+    "99": "Will"
+  }
+}

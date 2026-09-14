@@ -1,0 +1,18 @@
+{
+  "mcc": "231",
+  "country": "Slovakia",
+  "operators": {
+    "01": "Orange",
+    "02": "Telekom",
+    "03": "4ka",
+    "04": "Telekom",
+    "05": "Orange",
+    "06": "O2",
+    "07": "Orange",
+    "08": "Unimobile",
+    "09": "DSI DATA, a.s.",
+    "10": "HMZ RÁDIOKOMUNIKÁCIE, spol. s r.o.",
+    "50": "Telekom",
+    "99": "ŽSR"
+  }
+}

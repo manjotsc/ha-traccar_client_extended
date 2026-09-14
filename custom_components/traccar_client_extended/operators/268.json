@@ -1,0 +1,21 @@
+{
+  "mcc": "268",
+  "country": "Portugal",
+  "operators": {
+    "01": "Vodafone",
+    "02": "Digi Portugal, Lda.",
+    "03": "NOS",
+    "04": "LycaMobile",
+    "05": "Oniway - Inforcomunicaçôes, S.A.",
+    "06": "MEO",
+    "07": "Sumamovil Portugal, S.A.",
+    "08": "MEO",
+    "11": "Compatel, Limited",
+    "12": "Infraestruturas de Portugal, S.A.",
+    "13": "G9Telecom, S.A.",
+    "21": "Zapp",
+    "80": "MEO",
+    "91": "Vodafone",
+    "93": "NOS"
+  }
+}

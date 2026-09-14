@@ -1,0 +1,11 @@
+{
+  "mcc": "716",
+  "country": "Peru",
+  "operators": {
+    "06": "Movistar",
+    "07": "Entel",
+    "10": "Claro",
+    "15": "Bitel",
+    "17": "Entel"
+  }
+}

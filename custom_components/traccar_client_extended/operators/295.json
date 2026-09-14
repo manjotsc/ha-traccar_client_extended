@@ -1,0 +1,15 @@
+{
+  "mcc": "295",
+  "country": "Liechtenstein",
+  "operators": {
+    "01": "Swisscom",
+    "02": "7acht",
+    "05": "FL1",
+    "06": "Cubic Telecom",
+    "07": "First Mobile AG",
+    "09": "EMnify GmbH",
+    "10": "Soracom LI Ltd.",
+    "11": "DIMOCO Messaging AG",
+    "77": "Alpmobil"
+  }
+}

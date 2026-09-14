@@ -1,0 +1,16 @@
+target-version = "py313"
+line-length = 88
+
+[lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "C4", "RET", "PIE", "D"]
+ignore = ["D203", "D213"]
+
+[lint.isort]
+# Match Home Assistant's convention: third-party libraries, then homeassistant.
+known-first-party = ["homeassistant"]
+# Also theirs: `import entity_registry as er, issue_registry as ir` on one line,
+# which is how every HA integration writes it.
+combine-as-imports = true
+
+[lint.per-file-ignores]
+"tests/*" = ["D"]

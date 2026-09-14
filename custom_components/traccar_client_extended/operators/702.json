@@ -1,0 +1,10 @@
+{
+  "mcc": "702",
+  "country": "Belize",
+  "operators": {
+    "67": "DigiCell",
+    "68": "INTELCO",
+    "69": "SMART",
+    "99": "SMART"
+  }
+}

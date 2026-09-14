@@ -1,0 +1,10 @@
+{
+  "mcc": "221",
+  "country": "Kosovo",
+  "operators": {
+    "01": "Vala",
+    "02": "IPKO",
+    "06": "Z Mobile",
+    "07": "D3 Mobile"
+  }
+}

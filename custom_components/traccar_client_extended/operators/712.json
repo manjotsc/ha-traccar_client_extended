@@ -1,0 +1,11 @@
+{
+  "mcc": "712",
+  "country": "Costa Rica",
+  "operators": {
+    "01": "Kölbi ICE",
+    "02": "Kölbi ICE",
+    "03": "Claro",
+    "04": "Liberty",
+    "20": "fullmóvil"
+  }
+}

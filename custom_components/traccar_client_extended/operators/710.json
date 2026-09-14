@@ -1,0 +1,9 @@
+{
+  "mcc": "710",
+  "country": "Nicaragua",
+  "operators": {
+    "21": "Claro",
+    "73": "Claro",
+    "300": "Tigo"
+  }
+}

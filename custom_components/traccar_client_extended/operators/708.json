@@ -1,0 +1,10 @@
+{
+  "mcc": "708",
+  "country": "Honduras",
+  "operators": {
+    "001": "Claro",
+    "002": "Tigo",
+    "030": "Hondutel",
+    "040": "Digicel"
+  }
+}

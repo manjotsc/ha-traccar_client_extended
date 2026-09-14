@@ -1,0 +1,11 @@
+{
+  "mcc": "370",
+  "country": "Dominican Republic",
+  "operators": {
+    "01": "Altice",
+    "02": "Claro",
+    "03": "Altice",
+    "04": "Viva",
+    "05": "Wind"
+  }
+}

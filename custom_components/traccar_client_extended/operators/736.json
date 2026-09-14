@@ -1,0 +1,9 @@
+{
+  "mcc": "736",
+  "country": "Bolivia",
+  "operators": {
+    "01": "Viva",
+    "02": "Entel",
+    "03": "Tigo"
+  }
+}

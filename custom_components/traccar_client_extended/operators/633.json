@@ -1,0 +1,10 @@
+{
+  "mcc": "633",
+  "country": "Seychelles",
+  "operators": {
+    "01": "Cable & Wireless",
+    "02": "Mediatech",
+    "05": "Intelvision Ltd",
+    "10": "Airtel"
+  }
+}

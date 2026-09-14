@@ -1,0 +1,15 @@
+{
+  "mcc": "452",
+  "country": "Vietnam",
+  "operators": {
+    "01": "MobiFone",
+    "02": "Vinaphone",
+    "03": "S-Fone",
+    "04": "Viettel Mobile",
+    "05": "Vietnamobile",
+    "06": "EVNTelecom",
+    "07": "Gmobile",
+    "08": "I-Telecom",
+    "09": "REDDI"
+  }
+}

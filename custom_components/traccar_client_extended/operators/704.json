@@ -1,0 +1,9 @@
+{
+  "mcc": "704",
+  "country": "Guatemala",
+  "operators": {
+    "01": "Claro",
+    "02": "Tigo",
+    "03": "Claro"
+  }
+}

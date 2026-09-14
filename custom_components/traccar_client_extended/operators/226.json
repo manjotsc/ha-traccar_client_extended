@@ -1,0 +1,17 @@
+{
+  "mcc": "226",
+  "country": "Romania",
+  "operators": {
+    "01": "Vodafone",
+    "02": "Clicknet Mobile",
+    "03": "Telekom",
+    "04": "Cosmote/Zapp",
+    "05": "Digi.Mobil",
+    "06": "Telekom",
+    "10": "Orange",
+    "11": "Enigma-System",
+    "15": "Idilis",
+    "16": "Lycamobile",
+    "19": "CFR"
+  }
+}

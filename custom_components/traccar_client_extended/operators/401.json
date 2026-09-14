@@ -1,0 +1,11 @@
+{
+  "mcc": "401",
+  "country": "Kazakhstan",
+  "operators": {
+    "01": "Beeline",
+    "02": "Kcell",
+    "07": "Altel",
+    "08": "Kazakhtelecom",
+    "77": "Tele2.kz"
+  }
+}

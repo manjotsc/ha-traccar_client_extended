@@ -1,0 +1,9 @@
+{
+  "mcc": "514",
+  "country": "East Timor",
+  "operators": {
+    "01": "Telkomcel",
+    "02": "TT",
+    "03": "Telemor"
+  }
+}

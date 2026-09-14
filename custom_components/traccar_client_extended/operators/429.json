@@ -1,0 +1,10 @@
+{
+  "mcc": "429",
+  "country": "Nepal",
+  "operators": {
+    "01": "Namaste / NT Mobile / Sky Phone",
+    "02": "Ncell",
+    "03": "UTL",
+    "04": "SmartCell"
+  }
+}

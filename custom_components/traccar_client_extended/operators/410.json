@@ -1,0 +1,14 @@
+{
+  "mcc": "410",
+  "country": "Pakistan",
+  "operators": {
+    "01": "Jazz",
+    "02": "3G EVO / CharJi 4G",
+    "03": "Ufone",
+    "04": "Zong",
+    "05": "SCO Mobile",
+    "06": "Telenor",
+    "07": "Jazz",
+    "08": "SCO Mobile"
+  }
+}

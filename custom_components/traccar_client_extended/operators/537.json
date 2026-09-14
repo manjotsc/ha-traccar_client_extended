@@ -1,0 +1,10 @@
+{
+  "mcc": "537",
+  "country": "Papua New Guinea",
+  "operators": {
+    "01": "bmobile",
+    "02": "citifon",
+    "03": "Digicel",
+    "04": "Digitec Communication Ltd."
+  }
+}

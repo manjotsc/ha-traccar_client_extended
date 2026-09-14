@@ -1,0 +1,12 @@
+{
+  "mcc": "744",
+  "country": "Paraguay",
+  "operators": {
+    "01": "VOX",
+    "02": "Claro",
+    "03": "Compañia Privada de Comunicaciones S.A.",
+    "04": "Tigo",
+    "05": "Personal",
+    "06": "Copaco"
+  }
+}

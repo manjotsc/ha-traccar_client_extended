@@ -1,0 +1,15 @@
+{
+  "mcc": "219",
+  "country": "Croatia",
+  "operators": {
+    "01": "HT HR",
+    "02": "Telemach",
+    "03": "ALTAVOX d.o.o.",
+    "04": "NTH Mobile d.o.o.",
+    "10": "A1 HR",
+    "12": "TELE FOCUS d.o.o.",
+    "20": "T-Mobile HR",
+    "22": "Mobile One",
+    "30": "INNOVACOM OÜ"
+  }
+}

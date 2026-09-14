@@ -1,0 +1,20 @@
+{
+  "mcc": "235",
+  "country": "United Kingdom",
+  "operators": {
+    "00": "Vectone Mobile",
+    "01": "EE",
+    "02": "EE",
+    "03": "Relish",
+    "04": "University of Strathclyde",
+    "06": "University of Strathclyde",
+    "07": "University of Strathclyde",
+    "08": "Spitfire Network Services Limited",
+    "77": "BT",
+    "88": "telet",
+    "91": "Vodafone UK",
+    "92": "Vodafone UK",
+    "94": "Hutchison 3G UK Ltd",
+    "95": "Network Rail Infrastructure Limited"
+  }
+}

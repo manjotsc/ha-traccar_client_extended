@@ -1,0 +1,12 @@
+{
+  "mcc": "635",
+  "country": "Rwanda",
+  "operators": {
+    "10": "MTN",
+    "11": "Rwandatel",
+    "12": "Rwandatel",
+    "13": "Airtel",
+    "14": "Airtel",
+    "17": "Olleh"
+  }
+}

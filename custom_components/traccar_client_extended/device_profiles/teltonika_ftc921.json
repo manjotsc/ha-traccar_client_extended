@@ -1,0 +1,394 @@
+{
+  "name": "teltonika_ftc921",
+  "display_name": "Teltonika FTC921",
+  "vendor": "Teltonika",
+  "description": "AVL parameters that Traccar's Teltonika decoder leaves as raw io<id> values, taken from the Teltonika Telematics wiki page for the FTC921. Note that Traccar decodes several IDs only when the device's model field is set to a matching FT[A-Z]nnn value.",
+  "protocols": [
+    "teltonika"
+  ],
+  "models": [
+    "FTC921"
+  ],
+  "attributes": {
+    "io800": {
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2,
+      "name": "External power",
+      "description": "AVL ID 800, External Voltage in mV. Traccar decodes this to `power` only when the device's model field matches FT[A-Z]nnn; with the model unset it arrives raw."
+    },
+    "io70": {
+      "device_class": "temperature",
+      "unit": "°C",
+      "scale": 0.1,
+      "precision": 1,
+      "name": "PCB temperature",
+      "description": "AVL ID 70. The documented range of -550..1150 for a degrees-Celsius value means it is sent in tenths."
+    },
+    "io1148": {
+      "platform": "ignore",
+      "name": "Connectivity quality",
+      "fields": {
+        "rssi": {
+          "byte": 0,
+          "name": "RSSI",
+          "device_class": "signal_strength",
+          "unit": "dBm",
+          "scale": -1,
+          "precision": 0,
+          "entity_category": "diagnostic"
+        },
+        "rsrp": {
+          "byte": 1,
+          "name": "RSRP",
+          "device_class": "signal_strength",
+          "unit": "dBm",
+          "scale": -1,
+          "precision": 0,
+          "entity_category": "diagnostic"
+        },
+        "sinr": {
+          "byte": 2,
+          "name": "SINR",
+          "unit": "dB",
+          "scale": 0.2,
+          "offset": -20,
+          "precision": 1,
+          "entity_category": "diagnostic"
+        },
+        "rsrq": {
+          "byte": 3,
+          "name": "RSRQ",
+          "unit": "dB",
+          "scale": -1,
+          "precision": 0,
+          "entity_category": "diagnostic"
+        }
+      },
+      "description": "AVL ID 1148. NOT a dBm value: four bytes packed into one word, least significant first -- RSSI, RSRP, SINR, RSRQ. Each is an unsigned magnitude of a negative dBm figure, except SINR, which is fifths of a dB offset by -20 per the model's parameter page. 0x099b6549 decodes to RSSI -73 dBm, RSRP -101 dBm, SINR +11 dB, RSRQ -9 dB, matching what the device's own log prints for that record. The word itself is ignored because its value is meaningless on its own; it was published as signal_strength in dBm, which put readings like 272725845 dBm into long-term statistics. Populated only in LTE, eMTC and NB-IoT modes. The four are filed as diagnostics, beside the Signal level bar count, and left enabled."
+    },
+    "io1149": {
+      "name": "LTE band",
+      "values": {
+        "0": "No LTE band"
+      },
+      "description": "AVL ID 1149. The LTE band the modem is attached to, 1..85 in LTE, eMTC and NB-IoT modes; 0 means none available. Traccar's Teltonika decoder does not register 1149, so it arrives raw. A band number identifies a band rather than measuring anything, so it carries no unit and no state class -- averaging band 4 and band 12 is not a number. The device does not send this unless the parameter is enabled in its configuration."
+    },
+    "io386": {
+      "device_class": "duration",
+      "unit": "s",
+      "name": "Time from last fix",
+      "description": "AVL ID 386."
+    },
+    "io449": {
+      "device_class": "duration",
+      "unit": "s",
+      "name": "Ignition on counter",
+      "description": "AVL ID 449."
+    },
+    "io255": {
+      "device_class": "speed",
+      "unit": "km/h",
+      "name": "Over speeding",
+      "description": "AVL ID 255, the speed at which an overspeed event triggered."
+    },
+    "io254": {
+      "scale": 0.01,
+      "precision": 2,
+      "name": "Eco driving value",
+      "description": "AVL ID 254. The document gives the unit as 'G or rad' depending on configuration, so no device class is claimed."
+    },
+    "io1440": {
+      "unit": "%",
+      "name": "Accelerometer calibration quality",
+      "description": "AVL ID 1440."
+    },
+    "io1429": {
+      "unit": "mG",
+      "name": "Crash average vector",
+      "description": "AVL ID 1429."
+    },
+    "io1432": {
+      "unit": "mG",
+      "name": "Crash max vector",
+      "description": "AVL ID 1432."
+    },
+    "io1437": {
+      "unit": "°",
+      "name": "Side vector delta",
+      "description": "AVL ID 1437."
+    },
+    "io1430": {
+      "name": "Crash direction",
+      "description": "AVL ID 1430."
+    },
+    "io1431": {
+      "name": "Crash duration",
+      "description": "AVL ID 1431."
+    },
+    "io257": {
+      "name": "Crash trace data",
+      "description": "AVL ID 257."
+    },
+    "io156": {
+      "platform": "binary_sensor",
+      "name": "Manual geofence in zone",
+      "description": "AVL ID 156."
+    },
+    "io157": {
+      "platform": "binary_sensor",
+      "name": "Manual geofence speeding",
+      "description": "AVL ID 157.",
+      "device_class": "problem"
+    },
+    "io242": {
+      "platform": "binary_sensor",
+      "name": "Fall down detected",
+      "description": "AVL ID 242.",
+      "device_class": "problem"
+    },
+    "io303": {
+      "platform": "binary_sensor",
+      "name": "Instant movement",
+      "description": "AVL ID 303.",
+      "device_class": "motion"
+    },
+    "io250": {
+      "platform": "binary_sensor",
+      "name": "Trip active",
+      "description": "AVL ID 250.",
+      "device_class": "running"
+    },
+    "io841": {
+      "platform": "binary_sensor",
+      "name": "Digital output 1 overcurrent",
+      "description": "AVL ID 841.",
+      "device_class": "problem"
+    },
+    "io13361": {
+      "platform": "binary_sensor",
+      "name": "Incoming call detected",
+      "description": "AVL ID 13361."
+    },
+    "io358": {
+      "platform": "binary_sensor",
+      "name": "Custom scenario 1",
+      "description": "AVL ID 358."
+    },
+    "io359": {
+      "platform": "binary_sensor",
+      "name": "Custom scenario 2",
+      "description": "AVL ID 359."
+    },
+    "io360": {
+      "platform": "binary_sensor",
+      "name": "Custom scenario 3",
+      "description": "AVL ID 360."
+    },
+    "io69": {
+      "name": "GNSS status",
+      "description": "AVL ID 69, 0..3."
+    },
+    "io155": {
+      "name": "Manual geofence ID",
+      "description": "AVL ID 155."
+    },
+    "io237": {
+      "name": "Network type",
+      "values": {
+        "0": "3G",
+        "1": "GSM (2G)",
+        "2": "4G (LTE)",
+        "3": "LTE Cat-M1",
+        "4": "LTE Cat-NB1",
+        "99": "Unknown"
+      },
+      "description": "AVL ID 237. Value meanings from the FTC305 parameter page, which documents them where the FTC921 page leaves the cell blank; 2 and 99 are confirmed against an FTC921's own offline log, which prints 'Network type: 2 [LTE (4G)]' and 'Network type: 99 [UNKNOWN]'. Note this is NOT the FMB-family enum, where 2 means eMTC."
+    },
+    "io383": {
+      "name": "Accelerometer calibration status",
+      "description": "AVL ID 383, 0..3."
+    },
+    "io391": {
+      "name": "Private/business mode",
+      "description": "AVL ID 391."
+    },
+    "io396": {
+      "name": "SECO",
+      "description": "AVL ID 396, 0..2."
+    },
+    "io641": {
+      "name": "ICCID",
+      "decode": "hex_ascii",
+      "entity_category": "diagnostic",
+      "description": "AVL ID 641, the SIM's ICCID, sent as 22 ASCII bytes. Traccar decodes only VIN and DTCs out of a variable-length IO element and hex-dumps everything else, so this arrives as twice as many hex characters: 3839313033... is 89103000... 'decode' undoes that, and passes the value through untouched if it is not hex after all. entity_category is restated because an override inherits nothing from the built-in mapping, and a SIM identifier is a diagnostic."
+    },
+    "io13266": {
+      "name": "Current active log file",
+      "description": "AVL ID 13266."
+    },
+    "io13267": {
+      "name": "Max log file count",
+      "description": "AVL ID 13267."
+    },
+    "io13372": {
+      "device_class": "signal_strength",
+      "unit": "dB",
+      "name": "Neighbouring cell 1 RSSI",
+      "description": "AVL ID 13372."
+    },
+    "io13370": {
+      "platform": "ignore",
+      "description": "AVL ID 13370, neighbouring cell 1 LAC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13371": {
+      "platform": "ignore",
+      "description": "AVL ID 13371, neighbouring cell 1 ID. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13373": {
+      "platform": "ignore",
+      "description": "AVL ID 13373, neighbouring cell 1 MNC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13374": {
+      "platform": "ignore",
+      "description": "AVL ID 13374, neighbouring cell 1 MCC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13377": {
+      "device_class": "signal_strength",
+      "unit": "dB",
+      "name": "Neighbouring cell 2 RSSI",
+      "description": "AVL ID 13377."
+    },
+    "io13375": {
+      "platform": "ignore",
+      "description": "AVL ID 13375, neighbouring cell 2 LAC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13376": {
+      "platform": "ignore",
+      "description": "AVL ID 13376, neighbouring cell 2 ID. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13378": {
+      "platform": "ignore",
+      "description": "AVL ID 13378, neighbouring cell 2 MNC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13379": {
+      "platform": "ignore",
+      "description": "AVL ID 13379, neighbouring cell 2 MCC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13382": {
+      "device_class": "signal_strength",
+      "unit": "dB",
+      "name": "Neighbouring cell 3 RSSI",
+      "description": "AVL ID 13382."
+    },
+    "io13380": {
+      "platform": "ignore",
+      "description": "AVL ID 13380, neighbouring cell 3 LAC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13381": {
+      "platform": "ignore",
+      "description": "AVL ID 13381, neighbouring cell 3 ID. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13383": {
+      "platform": "ignore",
+      "description": "AVL ID 13383, neighbouring cell 3 MNC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13384": {
+      "platform": "ignore",
+      "description": "AVL ID 13384, neighbouring cell 3 MCC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13387": {
+      "device_class": "signal_strength",
+      "unit": "dB",
+      "name": "Neighbouring cell 4 RSSI",
+      "description": "AVL ID 13387."
+    },
+    "io13385": {
+      "platform": "ignore",
+      "description": "AVL ID 13385, neighbouring cell 4 LAC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13386": {
+      "platform": "ignore",
+      "description": "AVL ID 13386, neighbouring cell 4 ID. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13388": {
+      "platform": "ignore",
+      "description": "AVL ID 13388, neighbouring cell 4 MNC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "io13389": {
+      "platform": "ignore",
+      "description": "AVL ID 13389, neighbouring cell 4 MCC. Changes on almost every report; enable it with a device override if you need it."
+    },
+    "rssi": {
+      "name": "Signal level",
+      "state_class": "measurement",
+      "entity_category": "diagnostic",
+      "enabled_by_default": false,
+      "description": "Teltonika AVL ID 21, 'GSM Signal'. Traccar registers 21 unconditionally (register(21, any, ...) -> KEY_RSSI), so it never arrives as io21 and an io21 entry here would be dead configuration. The value is a 0..5 bar count, NOT dBm -- the real RSSI in dBm is the io1148 rssi field, which is why this one is renamed. state_class is set explicitly because a bar count has no unit and no device class to infer one from, and without it the reading would keep no history. entity_category is restated because an override inherits nothing from the built-in mapping, which files this one under diagnostics and creates it switched off, as the built-in mapping does."
+    },
+    "io9": {
+      "device_class": "voltage",
+      "unit": "V",
+      "scale": 0.001,
+      "precision": 2,
+      "name": "Analog input 1",
+      "description": "AVL ID 9, Analog Input 1. Reported in millivolts."
+    },
+    "io12": {
+      "device_class": "volume",
+      "unit": "L",
+      "scale": 0.001,
+      "precision": 2,
+      "state_class": "total_increasing",
+      "name": "Fuel used (GNSS)",
+      "description": "AVL ID 12, Fuel Used GNSS. Reported in millilitres, and cumulative, so it is a total rather than a measurement."
+    },
+    "io68": {
+      "device_class": "current",
+      "unit": "mA",
+      "precision": 0,
+      "entity_category": "diagnostic",
+      "name": "Battery current",
+      "description": "AVL ID 68, Battery Current."
+    },
+    "io113": {
+      "device_class": "battery",
+      "unit": "%",
+      "precision": 0,
+      "name": "Battery level",
+      "description": "AVL ID 113, Battery capacity level."
+    },
+    "io200": {
+      "entity_category": "diagnostic",
+      "name": "Sleep mode",
+      "values": {
+        "0": "Normal",
+        "3": "Online deep sleep",
+        "4": "Deep sleep",
+        "5": "Power off sleep"
+      },
+      "description": "AVL ID 200, Sleep Mode. 1 and 2 are listed as not used, so they are left unlabelled and would show as numbers."
+    },
+    "io205": {
+      "entity_category": "diagnostic",
+      "name": "GSM cell ID",
+      "description": "AVL ID 205, GSM base station ID. An identifier, not a quantity, so no unit and no state class -- averaging cell IDs is not a number."
+    },
+    "io206": {
+      "entity_category": "diagnostic",
+      "name": "GSM area code",
+      "description": "AVL ID 206, Location Area Code (LAC). An identifier, not a quantity."
+    },
+    "io1452": {
+      "name": "Device mounting",
+      "values": {
+        "0": "Mounted properly",
+        "1": "High vibrations",
+        "2": "Mounting changed",
+        "3": "GNSS antenna angle invalid"
+      },
+      "description": "AVL ID 1452, Faulty Device Mounting."
+    }
+  }
+}

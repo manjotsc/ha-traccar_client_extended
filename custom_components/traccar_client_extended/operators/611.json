@@ -1,0 +1,11 @@
+{
+  "mcc": "611",
+  "country": "Guinea",
+  "operators": {
+    "01": "Orange",
+    "02": "Sotelgui",
+    "03": "Intercel",
+    "04": "MTN",
+    "05": "Cellcom"
+  }
+}

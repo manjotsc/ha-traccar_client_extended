@@ -1,0 +1,22 @@
+{
+  "mcc": "641",
+  "country": "Uganda",
+  "operators": {
+    "01": "Airtel",
+    "04": "Tangerine Uganda Limited",
+    "06": "Vodafone",
+    "10": "MTN",
+    "11": "Uganda Telecom",
+    "14": "Africell",
+    "16": "SimbaNET Uganda Limited",
+    "18": "Smart",
+    "20": "Hamilton Telecom Limited",
+    "22": "Airtel",
+    "26": "Lycamobile",
+    "30": "Anupam Global Soft Uganda Limited",
+    "33": "Smile",
+    "40": "Civil Aviation Authority (CAA)",
+    "44": "K2",
+    "66": "i-Tel"
+  }
+}

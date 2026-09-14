@@ -1,0 +1,19 @@
+{
+  "mcc": "640",
+  "country": "Tanzania",
+  "operators": {
+    "01": "Shared Network Tanzania Limited",
+    "02": "tiGO",
+    "03": "Zantel",
+    "04": "Vodacom",
+    "05": "Airtel",
+    "06": "WIA Company Limited",
+    "07": "TTCL Mobile",
+    "08": "Smart",
+    "09": "Halotel",
+    "11": "SmileCom",
+    "12": "MyCell Limited",
+    "13": "Cootel",
+    "14": "MO Mobile Holding Limited"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "mcc": "545",
+  "country": "Kiribati",
+  "operators": {
+    "01": "Kiribati - ATH",
+    "02": "OceanLink",
+    "09": "Kiribati - Frigate Net"
+  }
+}

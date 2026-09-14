@@ -1,0 +1,10 @@
+{
+  "mcc": "276",
+  "country": "Albania",
+  "operators": {
+    "01": "ONE",
+    "02": "Vodafone",
+    "03": "ALBtelecom",
+    "04": "Plus Communication"
+  }
+}

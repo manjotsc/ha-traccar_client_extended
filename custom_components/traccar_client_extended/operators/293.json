@@ -1,0 +1,16 @@
+{
+  "mcc": "293",
+  "country": "Slovenia",
+  "operators": {
+    "10": "SŽ - Infrastruktura, d.o.o.",
+    "11": "BeeIN d.o.o.",
+    "20": "COMPATEL Ltd",
+    "21": "NOVATEL d.o.o.",
+    "22": "Mobile One Ltd.",
+    "40": "A1 SI",
+    "41": "Mobitel",
+    "64": "T-2",
+    "70": "Telemach",
+    "86": "ELEKTRO GORENJSKA, d.d"
+  }
+}

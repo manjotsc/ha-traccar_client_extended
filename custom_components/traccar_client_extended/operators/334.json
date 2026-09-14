@@ -1,0 +1,27 @@
+{
+  "mcc": "334",
+  "country": "Mexico",
+  "operators": {
+    "001": "Comunicaciones Digitales Del Norte, S.A. de C.V.",
+    "010": "AT&T",
+    "020": "Telcel",
+    "030": "Movistar",
+    "040": "Unefon",
+    "050": "AT&T / Unefon",
+    "060": "Servicios de Acceso Inalambrico, S.A. de C.V.",
+    "066": "Telefonos de México, S.A.B. de C.V.",
+    "070": "Unefon",
+    "080": "Unefon",
+    "090": "AT&T",
+    "100": "Telecomunicaciones de México",
+    "110": "Maxcom Telecomunicaciones, S.A.B. de C.V.",
+    "120": "Quickly Phone, S.A. de C.V.",
+    "130": "ALESTRA SERVICIOS MÓVILES, S.A. DE C.V.",
+    "140": "Red Compartida",
+    "150": "Ultranet",
+    "160": "Cablevisión Red, S.A. de C.V.",
+    "170": "Oxio Mobile, S.A. de C.V.",
+    "180": "FreedomPop",
+    "190": "Viasat"
+  }
+}

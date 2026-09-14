@@ -1,0 +1,10 @@
+{
+  "mcc": "617",
+  "country": "Mauritius",
+  "operators": {
+    "01": "my.t",
+    "02": "MOKOZE / AZU",
+    "03": "CHILI",
+    "10": "Emtel"
+  }
+}

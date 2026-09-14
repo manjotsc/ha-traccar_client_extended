@@ -1,0 +1,9 @@
+{
+  "mcc": "652",
+  "country": "Botswana",
+  "operators": {
+    "01": "Mascom",
+    "02": "Orange",
+    "04": "beMobile"
+  }
+}

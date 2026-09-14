@@ -1,0 +1,9 @@
+{
+  "mcc": "415",
+  "country": "Lebanon",
+  "operators": {
+    "01": "Alfa",
+    "03": "Touch",
+    "05": "Ogero Mobile"
+  }
+}

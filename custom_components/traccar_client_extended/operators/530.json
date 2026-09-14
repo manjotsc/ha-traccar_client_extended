@@ -1,0 +1,15 @@
+{
+  "mcc": "530",
+  "country": "New Zealand",
+  "operators": {
+    "00": "Telecom",
+    "01": "Vodafone",
+    "02": "Telecom",
+    "03": "Woosh",
+    "04": "TelstraClear",
+    "05": "Spark",
+    "06": "FX Networks",
+    "07": "Dense Air New Zealand",
+    "24": "2degrees"
+  }
+}

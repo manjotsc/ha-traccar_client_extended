@@ -1,0 +1,9 @@
+{
+  "mcc": "467",
+  "country": "North Korea",
+  "operators": {
+    "05": "Koryolink",
+    "06": "Kang Song NET",
+    "193": "SunNet"
+  }
+}
