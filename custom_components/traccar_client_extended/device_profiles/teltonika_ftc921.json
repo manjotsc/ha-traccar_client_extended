@@ -208,7 +208,13 @@
     },
     "io383": {
       "name": "Accelerometer calibration status",
-      "description": "AVL ID 383, 0..3."
+      "description": "AVL ID 383, 0..3.",
+      "values": {
+        "0": "No Calibration",
+        "1": "Calibrated",
+        "2": "Not Configured",
+        "3": "Fully Calibrated"
+      }
     },
     "io391": {
       "name": "Private/business mode",

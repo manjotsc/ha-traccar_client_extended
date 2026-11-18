@@ -11,7 +11,10 @@ pytest-homeassistant-custom-component>=0.13.364
 
 pytest>=8.0
 pytest-asyncio>=0.24
-pytraccar==3.0.0
+# A floor, matching manifest.json: Home Assistant pins pytraccar itself (core's
+# traccar_server uses it), so an exact pin here would make pip refuse to resolve
+# the day Home Assistant bumps it.
+pytraccar>=3.0.0
 # Pinned, unlike the rest. Ruff is a gate rather than a dependency: a new
 # release adds rules and reformats, so a floor turns CI red on a commit that
 # changed nothing, and `ruff format` disagrees with whatever the last person

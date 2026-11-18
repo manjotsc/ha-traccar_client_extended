@@ -1,6 +1,10 @@
 {
   "domain": "traccar_client_extended",
   "name": "Traccar Client Extended",
+  "categories": [
+    "presence_location.trackers",
+    "vehicles_transport.cars_evs"
+  ],
   "codeowners": [
     "@manjotsc"
   ],
@@ -13,7 +17,7 @@
   "iot_class": "local_push",
   "issue_tracker": "https://github.com/manjotsc/ha-traccar_client_extended/issues",
   "requirements": [
-    "pytraccar==3.0.0"
+    "pytraccar>=3.0.0"
   ],
-  "version": "1.0.0"
+  "version": "1.1.0"
 }
