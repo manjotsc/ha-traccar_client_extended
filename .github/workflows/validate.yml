@@ -3,6 +3,10 @@ name: Validate
 on:
   push:
   pull_request:
+  # A "Run workflow" button on the Actions page. Re-running an old run tests
+  # that run's commit, never the current one, so this is the way to test main
+  # on demand.
+  workflow_dispatch:
   schedule:
     - cron: "0 4 * * 1"
 
